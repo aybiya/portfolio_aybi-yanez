@@ -1,0 +1,97 @@
+/* // Branding */
+
+@use '../styles/h-fonts.scss' as F;
+@use '../styles/h-colors.scss' as C;
+@use '../styles/mixin.scss' as M;
+
+.branding-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7rem 1.5rem 0 1.5rem;
+    text-align: center;
+    
+    section{
+        h1,p{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__cards{
+        padding-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        justify-items: center;
+        align-content: center;
+        gap: 30px;
+
+        .branding-cards{
+            background-color: C.$witheColor;
+            border-radius: 10%;
+            box-shadow: 1px 1px 15px 1px rgb(233, 237, 237);
+
+            &__images{
+        
+                 img {
+                    width: 100%; 
+                    height: auto;
+                    padding: 0.5rem 0.5rem;
+                }
+
+                overflow: hidden; 
+                
+                a:hover {
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+
+    //Footer BP mobile
+    @include M.medias(mobile) {
+        padding: 16vh 6vh 0 6vh;
+
+        section{
+            p{
+                padding: 0 1rem;
+            }
+        }
+
+        &__cards{
+            padding-top: 25hv;
+            grid-template-columns: 1fr; 
+            gap: 35px;
+
+            .branding-cards {
+                width: 100%; 
+                height: auto;
+                
+            }
+
+        }
+     }
+
+
+     //Footer BP tablet
+     @include M.medias(tablet) {
+        padding: 10rem 3rem 0 3rem;
+
+        section{
+            padding-bottom: 3rem;
+        }
+
+        &__cards{
+            grid-template-columns: 1fr 1fr; 
+            gap: 45px;
+
+            .branding-cards {
+                width: 100%; 
+                height: auto;
+                
+            }
+        }
+     }
+}

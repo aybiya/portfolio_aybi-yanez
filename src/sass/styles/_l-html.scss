@@ -1,0 +1,90 @@
+/* // html */
+
+@use './h-fonts' as F;
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+
+html {
+    font-family: F.$mainFont;
+    font-size: F.$fontSize;
+    font-weight: F.$textRegular;
+    line-height: F.$lineHeight;
+    color: C.$primaryColor; 
+    background: radial-gradient(circle, #EAEFF2, #F9FAFB);
+    
+    h1{
+        font-size: 3rem;
+        font-family: F.$titleFont;
+        font-weight: F.$textBold;
+        color: C.$secondaryColor;
+        text-align: center;
+    }
+
+    h2, h3{
+        font-family: F.$titleFont;
+        font-weight: F.$textSemiBold;
+        color: C.$secondaryColor;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+   
+   p{
+        padding: 0.8rem 0;
+   }
+
+   .loading-mssg{
+        font-size: F.$textMd;
+        font-weight: F.$textBold;
+        color: C.$GrayBlueColor;
+    }
+    
+   //Footer BP tablet
+   @include M.medias(mobile) {
+
+        h1{
+            font-size: 2.3rem;
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+            
+        p{
+            font-size: 20px;
+            padding: 0.8rem 0;
+        }
+   }
+
+   //Footer BP tablet
+   @include M.medias(tablet) {
+        h1{
+            font-size: 2.9rem;
+        }
+
+        h2{
+            font-size: 2.7rem;
+        }
+
+        h3{
+            font-size: 1.8rem;
+        }
+            
+        p{
+            font-size: 20px;
+            padding: 0.8rem 0;
+        }
+   }
+} 

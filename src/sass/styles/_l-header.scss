@@ -1,0 +1,118 @@
+/* // Navbar */
+
+@use './h-fonts' as F;
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+header{
+    margin: 0%;
+    width: 100vw;
+    
+    .navBar{
+        background-color: C.$GrayBlueColor;
+        box-shadow: 2px 2px 20px 0.8px rgb(208, 213, 219);
+        display: flex;
+        justify-content:right;
+        align-items: center;
+        //para que quede fija
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        
+        .logo{
+            width: 200px;
+            padding: 5%;
+            margin-right: auto;
+        }
+        
+        .navBar-menu{
+            display: none;
+        }
+
+        ul{
+            margin-left: auto;
+            padding: 0;
+            width: 35%;
+            display: flex;
+            justify-content: space-evenly;
+
+            a{
+                color: C.$ligthColor;
+                font-family: F.$titleFont;
+                letter-spacing: 1.2px;
+                font-size: F.$textSm;
+                text-decoration: none;
+                    
+                &:hover{
+                    color: C.$secondaryColor;
+                    cursor: pointer;
+                }
+            }
+
+            .active{
+                font-weight: F.$textBold;
+            }
+        }
+
+    //NavbBar BP xs mobile
+        @media (max-width: 333px){
+            .logo{
+                width: 120px; 
+            }
+		}
+
+        //NavbBar BP mobile
+        @include M.medias(mobile) {
+            justify-content:space-around;
+            //Bóton hamburguesa
+            flex-wrap: wrap;
+
+            .logo{
+                width: 180px;
+                padding: 0;
+                
+            }
+            
+            .navBar-menu{
+                color: C.$primaryColor;
+                width: 5%;
+                display: block;
+                margin-left: auto;
+                padding: 1.5rem 2rem 1.5rem 0;
+                
+                .menu-bars-btn{
+                    font-size: 1.5rem;
+                }
+            }
+            
+            ul{
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                background-color: C.$ligthColor;
+                margin-bottom: 0;
+                padding: 1.5rem 0;
+
+                li{
+                    margin: 10px;
+                    padding-left: 2rem;
+                    a{
+                        color: C.$primaryColor;
+                    }
+                }
+            }  
+            
+        }
+
+
+    
+
+        //NavbBar BP tablet
+        @include M.medias(tablet){
+            ul {
+                width: 50%;
+            }
+        }
+    }
+} 

@@ -1,0 +1,77 @@
+/* // Social Media page */
+
+@use '../styles/h-fonts.scss' as F;
+@use '../styles/h-colors.scss' as C;
+@use '../styles/mixin.scss' as M;
+
+.main-social-media{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7rem 5.5rem 0 5.5rem;
+    text-align: center;
+
+    section{
+        h1,p{
+            padding: 0;
+            margin: 0;
+        }
+        padding-bottom: 4rem;
+    }
+
+    &__cards{
+        article{
+            padding: 2rem 0 4.5rem 0;
+
+            h2{
+                color: C.$GrayBlueColor;
+            }
+
+            p{
+                padding-bottom: 3rem;
+                font-size: 1.5rem;
+            }
+        }
+
+
+    }
+
+     //NavbBar BP mobile
+     @include M.medias(mobile){
+        padding: 8rem 0.5rem 0 0.5rem;
+       
+        section{
+            padding-bottom: 4rem;
+        }
+
+        &__cards{
+
+            article{
+                padding: 1.5rem;
+                h2{
+                    font-size: 2.1rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+                img{
+                    padding: 1rem 0 4rem 0;
+                }
+            }
+        }
+    }
+
+     //NavbBar BP tablet
+     @include M.medias(tablet){
+        padding: 8rem 0.5rem 0 0.5rem;
+       
+        &__cards{
+            h2{
+                font-size: 2.3;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+     }
+}

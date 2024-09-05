@@ -1,0 +1,186 @@
+/* // footer */
+@use './h-fonts' as F;
+@use './h-colors' as C;
+@use './mixin.scss' as M;
+
+
+footer{
+    background-color: C.$GrayBlueColor;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 8rem;
+    color: C.$ligthColor;
+    padding: 0.2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+    
+    .logo{
+        width: 45%;
+    }
+    
+    .linksFooter, .socialMedia{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .socialMedia{
+        margin-right: auto;
+        article{
+            padding: 0;
+            a{
+                padding-right: 1rem;
+                text-decoration: none;
+                color: C.$ligthColor;
+                font-size: 1.8rem; 
+            }
+            a:hover{
+                color: C.$secondaryColor;
+                cursor: pointer;
+                }
+        }
+    }
+
+    .linksFooter{
+        margin-left: auto;
+
+        li{
+            padding-right: 1rem;
+        }
+        a{
+            color: C.$ligthColor;
+            font-family: F.$titleFont;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            &:hover{
+                color: C.$secondaryColor;
+                cursor: pointer;
+            }
+        }
+
+        @media (max-width: 1270px){
+			width: 35%;
+		}
+    }
+
+  //Footer BP XS mobile
+    @media (max-width: 370px) {
+        margin-top: 4rem;
+
+        .linksFooter{
+            padding-left: 0.1rem;
+        }
+
+        .socialMedia{
+            article{
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+
+                a{
+                    font-size: 0.5rem;
+                    padding: 0.4rem;
+                }
+                
+            }
+        }
+
+    }
+
+    //Footer BP mobile
+    @include M.medias(mobile){
+        margin-top: 2rem;
+        padding: 0.5rem 0rem;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            display: none;
+        }
+
+        .socialMedia{
+            width: 35%;
+            margin: 0;
+            padding: 0;
+            
+            article{
+
+                a{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .linksFooter{
+            flex-direction: column;
+            justify-content:start;
+            align-items: start;
+            margin: 0;
+            width: 50%;
+            padding: 0;
+
+            li{
+                padding-bottom: 0.4rem;
+
+                a{
+                    font-size: F.$textSm;
+                }
+            }
+        }
+
+        // Cambiar el orden visual de los elementos
+        .element:nth-child(1) {
+            order: 3; 
+          }
+
+          .element:nth-child(2) {
+            order: 2; 
+          }
+          
+          .element:nth-child(3) {
+            order: 1; 
+          }
+    } 
+
+    //Footer BP tablet
+    @include M.medias(tablet) {
+
+        .socialMedia{
+            justify-content: space-around;
+
+            article{
+                a{
+                    font-size: 1.2rem;
+                    padding-right: 0.45rem;
+                }
+            }
+        }
+
+        .logo{
+            width: 30%;
+        }
+
+        .linksFooter{
+            margin-left: auto;
+
+            a{
+                font-size: 0.8rem;
+                padding-right: 0;
+                    
+                &:hover{
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            @media (max-width: 935px){
+                width: 45%;
+            }
+        }
+
+    }
+}

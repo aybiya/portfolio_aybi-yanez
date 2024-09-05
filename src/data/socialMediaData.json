@@ -1,0 +1,158 @@
+[
+    {
+      "id": "1",
+      "title": "Armonía",
+      "images": [
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/armonia-stories.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/armonia-stories-mobile.png",
+          "alt": "Mockup con diseños para instagram stories de una marca",
+          "caption": "Instagram stories"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/armonia-posts.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/armonia-posts-mobile.png",
+          "alt": "Mockup con diseños para instagram posts de una marca",
+          "caption": "Instagram posts"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Sevillano Automotores",
+      "images": [
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/sevillano-stories.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/sevillano-stories-mobile.png",
+          "alt": "Mockup con diseños para instagram stories de una marca",
+          "caption": "Instagram stories"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/sevillano-posts.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/sevillano-posts-mobile.png",
+          "alt": "Mockup con diseños para instagram posts de una marca",
+          "caption": "Instagram posts"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/sevillano-mailing.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/sevillano-mailing-mobile.png",
+          "alt": "Mockup con diseños para instagram posts de una marca",
+          "caption": "Mailing"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "V&L",
+      "images": [
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/vyl-stories.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/vyl-stories-mobile.png",
+          "alt": "Mockup con diseños para instagram stories de una marca",
+          "caption": "Instagram stories"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/vyl-posts.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/vyl-posts-mobile.png",
+          "alt": "Mockup con diseños para instagram posts de una marca",
+          "caption": "Instagram posts"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/vyl-reels.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/vyl-reels-mobile.png",
+          "alt": "Mockup con diseños para instagram reels de una marca",
+          "caption": "Instagram reels"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Zonda",
+      "images": [
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/zonda-stories.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/zonda-stories-mobile.png",
+          "alt": "Mockup con diseños para instagram stories de una marca",
+          "caption": "Instagram stories"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/zonda-posts.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/zonda-posts-mobile.png",
+          "alt": "Mockup con diseños para instagram posts de una marca",
+          "caption": "Instagram posts"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Salta Polo Club",
+      "images": [
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/spc-stories.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/spc-stories-mobile.png",
+          "alt": "Mockup con diseños para instagram stories de una marca",
+          "caption": "Instagram stories"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/spc-posts.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/spc-posts-mobile.png",
+          "alt": "Mockup con diseños para instagram posts de una marca",
+          "caption": "Instagram posts"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Baccon & Asoc.",
+      "images": [
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/baccon-stories.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/baccon-stories-mobile.png",
+          "alt": "Mockup con diseños para instagram stories de una marca",
+          "caption": "Instagram stories"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/baccon-posts.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/baccon-posts-mobile.png",
+          "alt": "Mockup con diseños para instagram posts de una marca",
+          "caption": "Instagram posts"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Olmedo",
+      "images": [
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/olmedo-stories.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/olmedo-stories-mobile.png",
+          "alt": "Mockup con diseños para instagram stories de una marca",
+          "caption": "Instagram stories"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/olmedo-posts.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/olmedo-posts-mobile.png",
+          "alt": "Mockup con diseños para instagram posts de una marca",
+          "caption": "Instagram posts"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Petraccini",
+      "images": [
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/petra-stories.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/petra-stories-mobile.png",
+          "alt": "Mockup con diseños para instagram stories de una marca",
+          "caption": "Instagram stories"
+        },
+        {
+          "desktop": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/petra-posts.png",
+          "mobile": "https://aybiya.github.io/portfolio-aybi-yanez/images/social-media/petra-posts-mobile.png",
+          "alt": "Mockup con diseños para instagram posts de una marca",
+          "caption": "Instagram posts"
+        }
+      ]
+    }
+  ]
