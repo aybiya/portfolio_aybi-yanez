@@ -749,11 +749,10 @@ footer .linksFooter a:hover {
     gap: 35px;
   }
   .branding-container__cards .branding-cards {
-    width: 100%;
-    height: auto;
+    width: 80%;
   }
   .branding-container__cards .branding-cards__btn {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
