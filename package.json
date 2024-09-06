@@ -5,10 +5,9 @@
   "type": "module",
   "scripts": {
     "sass": "sass",
-    "watch": "sass --watch src/sass/App.sass:src/App.css --no-source-map --no-indented",
+    "watch": "sass --watch src/sass/app.sass:src/App.css --no-source-map --no-indented",
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

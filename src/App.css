@@ -1,5 +1,7 @@
 /* // html */
-html {
+html body {
+  margin: 0;
+  min-height: 100vh;
   font-family: "Manrope", sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -7,60 +9,66 @@ html {
   color: rgb(91, 115, 135);
   background: radial-gradient(circle, #EAEFF2, #F9FAFB);
 }
-html h1 {
+html body h1 {
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: rgb(115, 119, 191);
   text-align: center;
 }
-html h2, html h3 {
+html body h2, html body h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: rgb(115, 119, 191);
 }
-html h2 {
+html body h2 {
   font-size: 2.5rem;
 }
-html h3 {
+html body h3 {
   font-size: 1.3rem;
   line-height: 1.2;
 }
-html p {
+html body p {
   padding: 0.8rem 0;
 }
-html .loading-mssg {
+html body ul {
+  list-style: none;
+}
+html body .loading-mssg {
   font-size: 1.5rem;
   font-weight: 700;
   color: rgb(145, 176, 217);
 }
+html body img {
+  max-width: 100%;
+}
 @media (max-width: 767px) {
-  html h1 {
+  html body h1 {
     font-size: 2.3rem;
   }
-  html h2 {
+  html body h2 {
     font-size: 2rem;
   }
-  html h3 {
+  html body h3 {
     font-size: 1.5rem;
     line-height: 1;
   }
-  html p {
+  html body p {
     font-size: 20px;
     padding: 0.8rem 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  html h1 {
+  html body h1 {
     font-size: 2.9rem;
   }
-  html h2 {
+  html body h2 {
     font-size: 2.7rem;
   }
-  html h3 {
+  html body h3 {
     font-size: 1.8rem;
   }
-  html p {
+  html body p {
     font-size: 20px;
     padding: 0.8rem 0;
   }
@@ -96,6 +104,7 @@ header .navBar ul {
   width: 35%;
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
 }
 header .navBar ul a {
   color: rgb(235, 239, 241);
@@ -159,10 +168,9 @@ header .navBar ul .active {
 
 /* // footer */
 footer {
+  width: 98%;
   background-color: rgb(145, 176, 217);
-  width: 100%;
-  margin-bottom: 0;
-  margin-top: 8rem;
+  margin: 8rem 0 0 0;
   color: rgb(235, 239, 241);
   padding: 0.2rem 2rem;
   display: flex;
