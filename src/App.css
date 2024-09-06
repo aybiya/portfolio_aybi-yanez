@@ -360,7 +360,7 @@ footer .linksFooter a:hover {
 }
 .main-container__skills .skills-cards {
   background-color: rgb(249, 250, 251);
-  border-radius: 10%;
+  border-radius: 30px;
   box-shadow: 1px 1px 15px 1px rgb(233, 237, 237);
   padding: 0.4rem 1rem 1.1rem 1rem;
   width: 80%;
@@ -421,7 +421,7 @@ footer .linksFooter a:hover {
 }
 .main-container__formation .container-formation-cards .formation-cards {
   background-color: rgb(249, 250, 251);
-  border-radius: 10%;
+  border-radius: 30px;
   box-shadow: 1px 1px 15px 1px rgb(233, 237, 237);
   padding: 0 1.5rem 1.5rem 2rem;
   margin: 0 0.8rem;
@@ -696,27 +696,45 @@ footer .linksFooter a:hover {
 .branding-container__cards {
   padding-top: 3rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
   justify-items: center;
-  align-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 .branding-container__cards .branding-cards {
   background-color: rgb(249, 250, 251);
-  border-radius: 10%;
+  border-radius: 30px;
   box-shadow: 1px 1px 15px 1px rgb(233, 237, 237);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
 .branding-container__cards .branding-cards__images {
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 .branding-container__cards .branding-cards__images img {
   width: 100%;
   height: auto;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  margin-bottom: 0;
 }
-.branding-container__cards .branding-cards__images a:hover {
+.branding-container__cards .branding-cards__btn {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 0.4rem 0.5rem;
+  color: rgb(249, 250, 251);
+  background-color: rgb(181, 180, 180);
+  margin-bottom: 1.2rem;
+}
+.branding-container__cards .branding-cards__btn:hover {
   cursor: pointer;
+  background-color: rgb(145, 197, 236);
 }
 @media (max-width: 767px) {
   .branding-container {
@@ -734,6 +752,9 @@ footer .linksFooter a:hover {
     width: 100%;
     height: auto;
   }
+  .branding-container__cards .branding-cards__btn {
+    font-size: 1.4rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .branding-container {
@@ -750,6 +771,48 @@ footer .linksFooter a:hover {
     width: 100%;
     height: auto;
   }
+}
+
+/* // Modal Designs */
+.designs-modal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.designs-modal .designs_close-btn {
+  margin-left: auto;
+  border: none;
+  color: rgb(91, 115, 135);
+  background-color: white;
+}
+.designs-modal .designs_close-btn:hover {
+  cursor: pointer;
+  color: rgb(145, 197, 236);
+}
+.designs-modal .designs_container {
+  border-radius: 15px;
+  margin: 0 8%;
+}
+.designs-modal .designs_container h2 {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: rgb(91, 115, 135);
+  color: rgb(235, 239, 241);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.designs-modal .designs_container .designs_images {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.designs-modal .designs_container .designs_images img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* // Social Media page */

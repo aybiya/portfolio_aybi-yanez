@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 
 const BrandingForm = () => {
   const [name, setName] = useState('');
-  const [url, setUrl] = useState('');
+  const [logo, setLogo] = useState('');
   const [description, setDescription] = useState('');
+  const [designs, setDesigns] = useState([]);
+  const [newDesign, setNewDesign] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const brandingData = { name, url, description };
+    const brandingData = { name, logo, description, designs };
 
     try {
       const response = await fetch('https://66d8759537b1cadd8054bd63.mockapi.io/branding', {
@@ -22,14 +24,27 @@ const BrandingForm = () => {
         console.log('Branding data added:', await response.json());
         // Limpiar campos después de agregar el producto
         setName('');
-        setUrl('');
+        setLogo('');
         setDescription('');
+        setDesigns([]);
       } else {
         console.error('Failed to add branding data');
       }
     } catch (error) {
       console.error('Error:', error);
     }
+  };
+
+  const handleAddDesign = (e) => {
+    e.preventDefault();
+    if (newDesign) {
+      setDesigns([...designs, newDesign]);
+      setNewDesign('');
+    }
+  };
+
+  const handleRemoveDesign = (designUrl) => {
+    setDesigns(designs.filter(design => design !== designUrl));
   };
 
   return (
@@ -44,9 +59,9 @@ const BrandingForm = () => {
       />
       <input
         type="url"
-        placeholder="URL"
-        value={url}
-        onChange={(e) => setUrl(e.target.value)}
+        placeholder="Logo"
+        value={logo}
+        onChange={(e) => setLogo(e.target.value)}
         required
       />
       <textarea
@@ -55,7 +70,23 @@ const BrandingForm = () => {
         onChange={(e) => setDescription(e.target.value)}
         required
       />
-      <button type="submit">Add Branding</button>
+      <input
+        type="url"
+        placeholder="Design URL"
+        value={newDesign}
+        onChange={(e) => setNewDesign(e.target.value)}
+      />
+      {/* Botón para cargar diseño */}
+      <button onClick={handleAddDesign}>Cargar Diseño</button>
+      <ul>
+        {designs.map((design, index) => (
+          <li key={index}>
+            {design} <button type="button" onClick={() => handleRemoveDesign(design)}>Eliminar diseño</button>
+          </li>
+        ))}
+      </ul>
+      {/* Botón para agregar nuevo branding */}
+      <button type="submit">Agregar Branding</button>
     </form>
   );
 };

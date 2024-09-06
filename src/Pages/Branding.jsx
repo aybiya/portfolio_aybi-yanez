@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import BrandingCards from '../Components/BrandigCards';
+import DesignsModal from '../Components/DesignsModal';
 import { toast } from 'react-toastify';
 
 const Branding = () => {
   const [brandings, setBrandings] = useState([]);
   const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentDesigns, setCurrentDesigns] = useState([]);
 
-  // Fetch data 
   const fetchBrandings = async () => {
     try {
       setIsLoading(true);
@@ -28,30 +30,47 @@ const Branding = () => {
     fetchBrandings();
   }, []);
 
+  const openModal = (designs) => {
+    setCurrentDesigns(designs);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setCurrentDesigns([]);
+  };
+
   return (
     <main className="branding-container">
-    <section>
-      <h1>BRANDING</h1>
-      <p>
-        Diseños de marca, branding e identidad visual para distintas marcas
-      </p>
-    </section>
-    <section className="branding-container__cards">
-      {error && <p>Error: {error}</p>}
-      {isLoading ? ( // Mensaje de carga mientras los datos se están cargando
-        <p className='loading-mssg'>Cargando datos...</p>
-      ) : (
-        brandings.length > 0 ? (
-          brandings.map((branding) => (
-            <BrandingCards key={branding.id} branding={branding} />
-          ))
+      <section>
+        <h1>BRANDING</h1>
+        <p>
+          Diseños de marca, branding e identidad visual para distintas marcas
+        </p>
+      </section>
+      <section className="branding-container__cards">
+        {error && <p>Error: {error}</p>}
+        {isLoading ? (
+          <p className='loading-mssg'>Cargando datos...</p>
         ) : (
-          <p>No hay datos disponibles.</p>
-        )
-      )}
-    </section>
-  </main>
-);
+          brandings.length > 0 ? (
+            brandings.map((branding) => (
+              <BrandingCards key={branding.id} branding={branding} onOpenModal={openModal} />
+            ))
+          ) : (
+            <p>No hay datos disponibles.</p>
+          )
+        )}
+      </section>
+
+      {/* Modal para mostrar los diseños */}
+      <DesignsModal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        designs={currentDesigns}
+      />
+    </main>
+  );
 };
 
 export default Branding;
