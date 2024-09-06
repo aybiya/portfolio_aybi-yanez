@@ -4,8 +4,8 @@ import './App.css'
 import { ToastContainer } from 'react-toastify';
 import Header from './Components/Header'
 import Home from './Pages/Home';
-import Branding from './pages/Branding';
-import SocialMedia from './pages/SocialMedia';
+import Branding from './Pages/Branding';
+import SocialMedia from './Pages/SocialMedia';
 /* import Alta from './Pages/Alta'; */
 import Footer from './Components/Footer'
 import 'react-toastify/dist/ReactToastify.css';
