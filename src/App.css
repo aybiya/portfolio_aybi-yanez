@@ -168,7 +168,7 @@ header .navBar ul .active {
 
 /* // footer */
 footer {
-  width: 98%;
+  width: 100%;
   background-color: rgb(145, 176, 217);
   margin: 8rem 0 0 0;
   color: rgb(235, 239, 241);
@@ -178,6 +178,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
 }
 footer .logo {
   width: 45%;

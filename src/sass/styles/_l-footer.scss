@@ -5,7 +5,7 @@
 
 
 footer{
-    width: 98%;
+    width: 100%;
     background-color: C.$GrayBlueColor;
     margin: 8rem 0 0 0;
     color: C.$ligthColor;
@@ -15,6 +15,7 @@ footer{
     justify-content: space-between;
     align-items:center;
     text-align: center;
+    box-sizing: border-box;
     
     .logo{
         width: 45%;
