@@ -2,12 +2,12 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import { ToastContainer } from 'react-toastify';
-import Header from './src/Components/Header'
-import Home from './src/Pages/Home';
-import Branding from './src/pages/Branding';
-import SocialMedia from './src/pages/SocialMedia';
+import Header from './Components/Header'
+import Home from './Pages/Home';
+import Branding from './pages/Branding';
+import SocialMedia from './pages/SocialMedia';
 /* import Alta from './Pages/Alta'; */
-import Footer from './src/Components/Footer'
+import Footer from './Components/Footer'
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
