@@ -94,7 +94,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link to="/social-media" onClick={closeMenu}>
-                    Social Mefdia
+                    Social Media
                   </Link>
                 </li>
               </ul>
