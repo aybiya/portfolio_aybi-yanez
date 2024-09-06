@@ -6,7 +6,7 @@ import Header from './Components/Header'
 import Home from './Pages/Home';
 import Branding from './pages/Branding';
 import SocialMedia from './pages/SocialMedia';
-import Alta from './Pages/Alta';
+/* import Alta from './Pages/Alta'; */
 import Footer from './Components/Footer'
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/branding" element={<Branding />} />
         <Route path="/social-media" element={<SocialMedia />} />
-        <Route path="/alta" element={<Alta />} />
+        {/* <Route path="/alta" element={<Alta />} /> */}
      </Routes>
      <Footer/>
      <ToastContainer />

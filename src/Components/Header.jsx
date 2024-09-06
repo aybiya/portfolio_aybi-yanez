@@ -75,9 +75,9 @@ const Header = () => {
                     <li>
                     <Link to="/social-media">Social Media</Link>
                     </li>
-                    <li>
+                    {/* <li>
                     <Link to="/alta">Alta</Link>
-                    </li>
+                    </li> */}
                 </ul>
             )}
             {isMobile && (
