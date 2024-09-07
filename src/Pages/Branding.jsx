@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import BrandingCards from '../Components/BrandigCards';
 import DesignsModal from '../Components/DesignsModal';
+import { LanguageContext } from "../Context/LanguageContex";
 import { toast } from 'react-toastify';
 
 const Branding = () => {
+  const { language, translations } = useContext(LanguageContext);
   const [brandings, setBrandings] = useState([]);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -45,20 +47,20 @@ const Branding = () => {
       <section>
         <h1>BRANDING</h1>
         <p>
-          Diseños de marca, branding e identidad visual para distintas marcas
+        {translations[language].branding.description}
         </p>
       </section>
       <section className="branding-container__cards">
         {error && <p>Error: {error}</p>}
         {isLoading ? (
-          <p className='loading-mssg'>Cargando datos...</p>
+          <p className='loading-mssg'>{translations[language].branding.loading}</p>
         ) : (
           brandings.length > 0 ? (
             brandings.map((branding) => (
               <BrandingCards key={branding.id} branding={branding} onOpenModal={openModal} />
             ))
           ) : (
-            <p>No hay datos disponibles.</p>
+            <p>{translations[language].branding.noData}</p>
           )
         )}
       </section>

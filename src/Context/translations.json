@@ -1,0 +1,101 @@
+{
+    "es": {
+      "home": {
+        "button": "Ver Curriculum Vitae",
+        "imgAlt": "portada de mi portfolio como diseñadora gráfica y full stack developer"
+      },
+      "intro": {
+        "imgAlt": "Foto de perfil de Aybi Yañez",
+        "greeting": "¡Hola, soy Aybi!",
+        "clarification": "(sí, mi nombre es Aybi)",
+        "intro1": "Tengo 28 años, soy licenciada en diseño gráfico con 6 años de experiencia en diseño de identidad visual, branding y en social media. También estudié full stack developer, lo que me lleva a integrar mis dos pasiones en mis proyectos: el diseño gráfico y el desarrollo web.",
+        "intro2": "Me entusiasma enfrentar nuevos retos y contribuir con mi experiencia a proyectos emocionantes. Mi objetivo es transmitir mensajes de manera efectiva, explorando nuevas herramientas y poniendo a prueba mi creatividad cada día."
+      },
+      "curriculumVitae": {
+        "heading": "Curriculum Vitae",
+        "description1": "Aspiro seguir creciendo, me enfoco en fusionar el diseño gráfico con el desarrollo web para crear soluciones innovadoras y efectivas.",
+        "description2":"En busca de crecer de forma profesional y desarrollar nuevas habilidades creativas, estoy lista para enfrentar nuevos retos y contribuir con mi experiencia y pasión a proyectos emocionantes.",
+        "formationHeading": "Formación:",
+        "university":"Universidad Católica de Salta | 2015-2021",
+        "degree":"Licenciatura en Diseño Gráfico",
+        "graduated":"Egresada",
+        "webDevelopment":"Desarrollo web",
+        "bootcamp":"Bootcamp Full Stack Developer",
+        "completed":"Finalizado",
+        "experienceHeading": "Experiencia laboral:",
+        "freelancer": "Freelancer | 2018 - Actualidad",
+        "graphicDesigner": "Diseñadora Gráfica",
+        "workAreas1": "- Branding y creación de marca",
+        "workAreas2": "- Identidad de marcas",
+        "workAreas3": "- Diseño Publicitario",
+        "workAreas4": "- Social Media",
+        "workAreas5": "- Administración de redes sociales",
+        "workAreas6": "- Fotografia para redes"
+      },
+      "contact": {
+        "heading": "Contacto",
+        "message": "Me encantaría que trabajemos juntos!",
+        "contactInfo": "Podes contactarme por cualquiera de estos medios:"
+      },
+      "branding": {
+        "description": "Diseños de marca, branding e identidad visual",
+        "loading":"Cargando datos...",
+        "noData":"No hay datos disponibles",
+        "button":"Ver diseños",
+        "designs":"Diseños"
+      },
+      "socialMedia": {
+        "description": "Creación de contenido, piezas gráficas y edición fotográfica para redes sociales"
+      }
+    },
+    "en": {
+      "home": {
+        "button": "View Curriculum Vitae",
+        "imgAlt": "portfolio cover as a graphic designer and full stack developer"
+      },
+      "intro": {
+        "imgAlt": "Aybi's profile picture",
+        "greeting": "Hi, I'm Aybi!",
+        "clarification": "(yes, my name is Aybi)",
+        "intro1": "I am 28 years old, I have a degree in graphic design with 6 years of experience in visual identity design, branding and social media. I also studied full stack development, which leads me to integrate my two passions in my projects: graphic design and web development.",
+        "intro2":"I am excited to take on new challenges and contribute my experience to exciting projects. My goal is to convey messages effectively, exploring new tools and putting my creativity to the test every day."
+      },
+      "curriculumVitae": {
+        "heading": "Curriculum Vitae",
+        "description": "I aspire to continue growing, I focus on merging graphic design with web development to create innovative and effective solutions.",
+        "description2":"I am looking to grow professionally and develop new creative skills. I am ready to face new challenges and contribute my experience and passion to exciting projects.",
+        "formationHeading": "Education:",
+        "university":"Catholic University of Salta | 2015-2021",
+        "degree":"Degree in Graphic Design",
+        "graduated":"Graduated",
+        "webDevelopment":"Web Development",
+        "fullStack":"Full Stack Developer Bootcamp",
+        "completed":"Completed",
+        "experienceHeading": "Work experience:",
+        "freelancer": "Freelancer | 2018 - Present",
+        "graphicDesigner": "Graphic Designer",
+        "workAreas1": "- Branding and brand creation",
+        "workAreas2": "- Brand identity",
+        "workAreas3": "- Advertising design",
+        "workAreas4": "- Social media",
+        "workAreas5": "- Social media managment",
+        "workAreas6": "- photography for social networks"
+      },
+      "contact": {
+        "heading": "Contact",
+        "message": "I would love for us to work together!",
+        "info": "You can contact me through any of these contact methods:"
+      },
+      "branding": {
+        "description": "Brand designs, branding and visual identity",
+        "loading":"Loading data...",
+        "noData":"No data available",
+        "button":"View designs",
+        "designs":"Designs"
+      },
+      "socialMedia": {
+        "description": "Content creation, graphic pieces and photo editing for social media"
+      }
+    }
+}
+  

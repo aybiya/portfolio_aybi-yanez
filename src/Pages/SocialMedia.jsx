@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import { LanguageContext } from "../Context/LanguageContex";
 import socialMediaData from "../data/socialMediaData.json"; 
 
 const SocialMedia = () => {
+  const { language, translations } = useContext(LanguageContext);
   const [isLoading, setIsLoading] = useState(true);
 
   // Mssg mientras está cargando la página 
@@ -22,7 +24,7 @@ const SocialMedia = () => {
         <>
           <section>
             <h1>SOCIAL MEDIA</h1>
-            <p>Creación de contenido, piezas gráficas y edición fotográfica para redes sociales</p>
+            <p>{translations[language].socialMedia.description}</p>
           </section>
           <section className="social-media__cards">
             {socialMediaData.map((item) => (

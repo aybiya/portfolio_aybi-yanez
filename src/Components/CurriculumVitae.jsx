@@ -1,53 +1,53 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { LanguageContext } from "../Context/LanguageContex";
+
 
 const CurriculumVitae = () => {
+
+    const { language, translations } = useContext(LanguageContext);
 
   return (
     <section className="main-container__formation">
             <article>
                 <h2>Curriculum Vitae</h2>
                 <p>
-                Estoy entusiasmada por seguir creciendo, me enfoco en fusionar el
-                diseño gráfico con el desarrollo web para crear soluciones
-                innovadoras y efectivas.
+                    {translations[language].curriculumVitae.description1}
                 </p>
                 <p>
-                En busca de crecer de forma profesional y desarrollar nuevas
-                habilidades creativas, estoy lista para enfrentar nuevos retos y
-                contribuir con mi experiencia y pasión a proyectos emocionantes.
-                </p>
+                    {translations[language].curriculumVitae.description2}
+               </p>
             </article>
             <section className="container-formation-cards">
             <article className="formation-cards">
-                <h3>Formación:</h3>
+                <h3>{translations[language].curriculumVitae.formationHeading}</h3>
                 <div>
-                <p>Universidad Católica de Salta | 2015-2021</p>
-                <p>Licenciatura en Diseño gráfico</p>
-                <p>Egresada</p>
+                <p>{translations[language].curriculumVitae.university}</p>
+                <p>{translations[language].curriculumVitae.degree}</p>
+                <p>{translations[language].curriculumVitae.graduated}</p>
                 </div>
                 <div>
                 <p>CoderHouse | 2022</p>
-                <p>Desarrollo web</p>
-                <p>Finalizado</p>
+                <p>{translations[language].curriculumVitae.webDevelopment}</p>
+                <p>{translations[language].curriculumVitae.completed}</p>
                 </div>
                 <div>
                 <p>EducationIT | 2023</p>
-                <p>Bootcamp Full Stack Developer</p>
-                <p>Finalizado</p>
+                <p>{translations[language].curriculumVitae.bootcamp}</p>
+                <p>{translations[language].curriculumVitae.completed}</p>
                 </div>
             </article>
             <article className="formation-cards">
-                <h3>Experiencia laboral:</h3>
+                <h3>{translations[language].curriculumVitae.experienceHeading}</h3>
                 <div>
-                <p>Freelancer | 2018 - Actualidad</p>
-                <p>Diseñadora Gráfica</p>
+                <p>{translations[language].curriculumVitae.freelancer}</p>
+                <p>{translations[language].curriculumVitae.graphicDesigner}</p>
                 <ul>
-                    <li>- Branding y creación de marca</li>
-                    <li>- Identidad de marcas</li>
-                    <li>- Diseño publicitario</li>
-                    <li>- Social media</li>
-                    <li>- Administración de redes sociales</li>
-                    <li>- Fotografía para redes</li>
+                    <li>{translations[language].curriculumVitae.workAreas1}</li>
+                    <li>{translations[language].curriculumVitae.workAreas2}</li>
+                    <li>{translations[language].curriculumVitae.workAreas3}</li>
+                    <li>{translations[language].curriculumVitae.workAreas4}</li>
+                    <li>{translations[language].curriculumVitae.workAreas5}</li>
+                    <li>{translations[language].curriculumVitae.workAreas6}</li>
                 </ul>
                 </div>
             </article>

@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
+import { LanguageContext } from "../Context/LanguageContex";
 import { Link } from 'react-router-dom';
 import { FaBars } from "react-icons/fa6";
 import { FaTimesCircle } from "react-icons/fa";
 
 
 const Header = () => {
-
+  const { language, toggleLanguage, translations } = useContext(LanguageContext);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
-
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -60,39 +60,34 @@ const Header = () => {
             alt="Logo Aybi Yañez graphic desing + full stack developer"
             />
             </Link>
+            <button onClick={toggleLanguage} className='language-btn'>
+              {language === "es" ? "Español" : "English"}
+            </button>
             {isMobile ? (
             <Link to="#" onClick={menuOpen ? closeMenu : toggleMenu} className='navBar-menu'>
                 {menuOpen ? <FaTimesCircle className='menu-bars-btn' /> : <FaBars className='menu-bars-btn' />}
             </Link>
             ) : (
                 <ul id="links">
-                    <li>
-                    <Link to="/">Inicio</Link>
-                    </li>
-                    <li>
-                    <Link to="/curriculum-vitae">CV</Link>
-                    </li>
-                    <li>
-                    <Link to="/branding">Branding</Link>
-                    </li>
-                    <li>
-                    <Link to="/social-media">Social Media</Link>
-                    </li>
-                    {/* <li>
-                    <Link to="/alta">Alta</Link>
-                    </li> */}
+                  <li>
+                  <Link to="/curriculum-vitae">Curriculum Vitae</Link>
+                  </li>
+                  <li>
+                  <Link to="/branding">Branding</Link>
+                  </li>
+                  <li>
+                  <Link to="/social-media">Social Media</Link>
+                  </li>
+                  {/* <li>
+                  <Link to="/alta">Alta</Link>
+                  </li> */}
                 </ul>
             )}
             {isMobile && (
               <ul style={{ display: menuOpen ? 'flex' : 'none' }}>
                 <li>
-                  <Link to="/" onClick={closeMenu}>
-                    Inicio
-                  </Link>
-                </li>
-                <li>
                   <Link to="/curriculum-vitae" onClick={closeMenu}>
-                      CV
+                      Curriculum Vitae
                     </Link>
                     </li>
                 <li>

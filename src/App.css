@@ -83,7 +83,7 @@ header .navBar {
   background-color: rgb(145, 176, 217);
   box-shadow: 2px 2px 20px 0.8px rgb(208, 213, 219);
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -95,11 +95,24 @@ header .navBar .logo {
   padding: 5%;
   margin-right: auto;
 }
+header .navBar .language-btn {
+  margin-left: auto;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid rgb(249, 250, 251);
+  border-radius: 10px;
+  padding: 0.4rem 0.5rem;
+  color: rgb(249, 250, 251);
+  background-color: rgb(145, 176, 217);
+}
+header .navBar .language-btn:hover {
+  cursor: pointer;
+  background-color: rgb(115, 119, 191);
+}
 header .navBar .navBar-menu {
   display: none;
 }
 header .navBar ul {
-  margin-left: auto;
   padding: 0;
   width: 35%;
   display: flex;
@@ -138,8 +151,8 @@ header .navBar ul .active {
     color: rgb(91, 115, 135);
     width: 5%;
     display: block;
-    margin-left: auto;
     padding: 1.5rem 2rem 1.5rem 0;
+    margin-left: 2rem;
   }
   header .navBar .navBar-menu .menu-bars-btn {
     font-size: 1.5rem;

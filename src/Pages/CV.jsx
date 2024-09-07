@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { IoLogoWhatsapp, IoIosMail } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa6";
 import SkillList from '../Components/SkillList';
 import CurriculumVitae from '../Components/CurriculumVitae';
+import { LanguageContext } from "../Context/LanguageContex";
 
 const CV = () => {
+
+    const { language, translations } = useContext(LanguageContext);
 
   return (
     <main className="main-container">
@@ -13,25 +16,19 @@ const CV = () => {
                 <picture>
                 <img
                 src="https://aybiya.github.io/portfolio-aybi-yanez/images/profile-photo.png"
-                alt="Foto de perfil de Aybi Yañez"
+                alt="{translations[language].intro.imgAlt}"
                 />
                 </picture>
                 <div>
-                <h1>¡Hola, soy Aybi!</h1>
-                <p>(sí, mi nombre es Aybi)</p>
+                <h1>{translations[language].intro.greeting}</h1>
+                <p>{translations[language].intro.clarification}</p>
                 </div>
             </article>
             <p>
-                Tengo 28 años, soy licenciada en diseño gráfico con 6 años de
-                experiencia en diseño de identidad visual, branding y en social media.
-                También estudié full stack developer, lo que me lleva a integrar mis
-                dos pasiones en mis proyectos: el diseño gráfico y el desarrollo web.
+                {translations[language].intro.intro1}
             </p>
             <p>
-            Me entusiasma enfrentar nuevos retos y contribuir con mi experiencia a
-            proyectos emocionantes. Mi objetivo es transmitir mensajes de manera
-            efectiva, explorando nuevas herramientas y poniendo a prueba mi
-            creatividad cada día.
+                {translations[language].intro.intro2}
             </p>
             </section>
             
@@ -42,9 +39,9 @@ const CV = () => {
                 
                 <section className="main-container__contact">
                 <article>
-                    <h2>Contacto</h2>
-                    <p>Me encantaría que trabajemos juntos!</p>
-                    <p>Puedes contactarme por cualquiera de estos 3 medios:</p>
+                    <h2>{translations[language].contact.heading}</h2>
+                    <p>{translations[language].contact.message}</p>
+                    <p>{translations[language].contact.info}</p>
                 </article>
                 <section className="contact-info-container">
                     <article className="contact-info">

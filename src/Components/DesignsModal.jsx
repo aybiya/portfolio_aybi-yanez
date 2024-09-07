@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Modal from 'react-modal';
+import { LanguageContext } from "../Context/LanguageContex";
 import { FaTimesCircle } from "react-icons/fa";
 
 const DesignsModal = ({ isOpen, onRequestClose, designs }) => {
   
+  const { language, translations } = useContext(LanguageContext);
+
   return (
     <Modal isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Design Modal">
         <section className='designs-modal'>
@@ -11,7 +14,7 @@ const DesignsModal = ({ isOpen, onRequestClose, designs }) => {
             <FaTimesCircle size={24} />
             </button>
             <section className='designs_container'>
-                <h2>Diseños</h2>
+                <h2>{translations[language].branding.designs}</h2>
                 <article className='designs_images'>
                     {designs.map((design, index) => (
                     <img key={index} src={design} alt={`Design ${index + 1}`} style={{ width: '100%', marginBottom: '10px' }} />

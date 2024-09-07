@@ -1,19 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
+import { LanguageContext } from "../Context/LanguageContex";
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+
+  const { language, translations } = useContext(LanguageContext);
 
   return (
     <main className="home-container">
         <picture className="home-img">
           <img
             src="https://aybiya.github.io/portfolio-aybi-yanez/images/portada-portfolio.png"
-            alt="portada de mi portfolio como diseñadora gráfica y full stack developer"
+            alt="{translations[language].home.imgAlt}"
           />
         </picture>
         {/* Botón para ver el currículum */}
         <Link to="/curriculum-vitae">
-          <button className='home-btn'>Ver curriculum</button>
+          <button className='home-btn'>{translations[language].home.button}</button>
         </Link>
     </main>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { LanguageProvider } from "./Context/LanguageContex";
 import './App.css'
 import { ToastContainer } from 'react-toastify';
 import Header from './Components/Header'
@@ -11,10 +12,12 @@ import SocialMedia from './Pages/SocialMedia';
 import Footer from './Components/Footer'
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const App = () => {
 
   return (
     <>
+      <LanguageProvider>
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,9 +25,10 @@ const App = () => {
         <Route path="/branding" element={<Branding />} />
         <Route path="/social-media" element={<SocialMedia />} />
         {/* <Route path="/alta" element={<Alta />} /> */}
-     </Routes>
-     <Footer/>
-     <ToastContainer />
+      </Routes>
+      <Footer/>
+      <ToastContainer />
+      </LanguageProvider>
     </>
   )
 }

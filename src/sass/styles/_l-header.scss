@@ -12,7 +12,7 @@ header{
         background-color: C.$GrayBlueColor;
         box-shadow: 2px 2px 20px 0.8px rgb(208, 213, 219);
         display: flex;
-        justify-content:right;
+        justify-content:space-between;
         align-items: center;
         //para que quede fija
         position: fixed;
@@ -25,13 +25,30 @@ header{
             padding: 5%;
             margin-right: auto;
         }
+
+        .language-btn{
+            margin-left: auto;
+            font-size: 1rem;
+            font-family: F.$titleFont;
+            border: 2px solid C.$witheColor;
+            border-radius: 10px;
+            padding: 0.4rem 0.5rem;
+            color: C.$witheColor;
+            background-color: C.$GrayBlueColor;;
+            
+            &:hover{
+                cursor: pointer;
+                background-color: C.$secondaryColor;
+            }
+            
+        }
         
         .navBar-menu{
             display: none;
         }
 
         ul{
-            margin-left: auto;
+
             padding: 0;
             width: 35%;
             display: flex;
@@ -74,14 +91,13 @@ header{
                 padding: 0;
                 
             }
-            
+
             .navBar-menu{
                 color: C.$primaryColor;
                 width: 5%;
                 display: block;
-                margin-left: auto;
                 padding: 1.5rem 2rem 1.5rem 0;
-                
+                margin-left: 2rem;
                 .menu-bars-btn{
                     font-size: 1.5rem;
                 }
