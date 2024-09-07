@@ -584,7 +584,7 @@ footer .linksFooter a:hover {
 }
 @media (max-width: 767px) {
   .main-container {
-    padding: 4rem 0.8rem 0.5rem 0.8rem;
+    padding: 9rem 0.8rem 0.5rem 0.8rem;
   }
   .main-container__intro .intro-profile {
     flex-direction: column;
@@ -600,7 +600,7 @@ footer .linksFooter a:hover {
     padding-right: 0;
   }
   .main-container__intro .intro-profile picture img {
-    width: 50%;
+    width: 30%;
     padding-bottom: 3px;
     border: 6px solid #91b0d9;
     border-radius: 50%;
