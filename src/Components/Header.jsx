@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FaBars } from "react-icons/fa6";
 import { FaTimesCircle } from "react-icons/fa";
 
@@ -70,6 +70,9 @@ const Header = () => {
                     <Link to="/">Inicio</Link>
                     </li>
                     <li>
+                    <Link to="/curriculum-vitae">CV</Link>
+                    </li>
+                    <li>
                     <Link to="/branding">Branding</Link>
                     </li>
                     <li>
@@ -87,6 +90,11 @@ const Header = () => {
                     Inicio
                   </Link>
                 </li>
+                <li>
+                  <Link to="/curriculum-vitae" onClick={closeMenu}>
+                      CV
+                    </Link>
+                    </li>
                 <li>
                   <Link to="/branding" onClick={closeMenu}>
                     Branding

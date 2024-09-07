@@ -315,12 +315,62 @@ footer .linksFooter a:hover {
 }
 
 /* // Index page*/
-.main-container {
-  padding: 6rem 6rem 0.5rem 6rem;
+.home-container {
+  padding: 3rem 6rem 0.5rem 6rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.main-container .front img {
-  padding: 5rem 0;
+.home-container .home-img {
+  padding: 0;
+  margin: 0;
+}
+.home-container .home-img img {
+  max-width: 73%;
+}
+.home-container .home-btn {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 0.4rem 0.5rem;
+  color: rgb(249, 250, 251);
+  background-color: rgb(145, 197, 236);
+}
+.home-container .home-btn:hover {
+  cursor: pointer;
+  background-color: rgb(181, 180, 180);
+}
+@media (max-width: 767px) {
+  .home-container {
+    padding: 4rem 0.8rem 0.5rem 0.8rem;
+  }
+  .home-container .home-img img {
+    padding: 13rem 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-container {
+    padding: 6rem 2rem 0.5rem 2rem;
+  }
+  .home-container .home-img img {
+    padding: 12rem 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1320px) {
+  .home-container {
+    padding: 6rem 8rem 0.5rem 8rem;
+  }
+  .home-container .home-img img {
+    padding: 10rem 0;
+  }
+}
+
+/* // Index page*/
+.main-container {
+  padding: 7rem 6rem 0.5rem 6rem;
+  text-align: center;
 }
 .main-container__intro p {
   padding: 0.9rem 2.5rem 0 2.5rem;
@@ -338,7 +388,7 @@ footer .linksFooter a:hover {
   padding-right: 2rem;
 }
 .main-container__intro .intro-profile picture img {
-  width: 45%;
+  width: 35%;
   padding: 3px;
   border: 6px solid #91b0d9;
   border-radius: 50%;
@@ -523,9 +573,6 @@ footer .linksFooter a:hover {
   .main-container {
     padding: 4rem 0.8rem 0.5rem 0.8rem;
   }
-  .main-container .front img {
-    padding: 13rem 0;
-  }
   .main-container__intro .intro-profile {
     flex-direction: column;
     justify-content: center;
@@ -601,10 +648,7 @@ footer .linksFooter a:hover {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-container {
-    padding: 6rem 2rem 0.5rem 2rem;
-  }
-  .main-container .front img {
-    padding: 12rem 0;
+    padding: 7rem 2rem 0.5rem 2rem;
   }
   .main-container__intro .intro-profile {
     flex-direction: column;
@@ -683,10 +727,7 @@ footer .linksFooter a:hover {
 }
 @media (min-width: 1024px) and (max-width: 1320px) {
   .main-container {
-    padding: 6rem 8rem 0.5rem 8rem;
-  }
-  .main-container .front img {
-    padding: 10rem 0;
+    padding: 7rem 8rem 0.5rem 8rem;
   }
 }
 
