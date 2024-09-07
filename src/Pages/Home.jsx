@@ -10,7 +10,7 @@ const Home = () => {
     <main className="home-container">
         <picture className="home-img">
           <img
-            src="https://aybiya.github.io/portfolio-aybi-yanez/images/portada-portfolio.png"
+            src="https://raw.githubusercontent.com/aybiya/portfolio-aybi-yanez/575d389f9cfa7d4ec8312530dde777389a1f5c08/images/portada-portfolio.svg"
             alt="{translations[language].home.imgAlt}"
           />
         </picture>

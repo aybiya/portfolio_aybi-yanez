@@ -329,7 +329,7 @@ footer .linksFooter a:hover {
 
 /* // Index page*/
 .home-container {
-  padding: 3rem 6rem 0.5rem 6rem;
+  padding: 1rem 6rem 0.5rem 6rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -339,7 +339,7 @@ footer .linksFooter a:hover {
   margin: 0;
 }
 .home-container .home-img img {
-  max-width: 73%;
+  width: 80%;
 }
 .home-container .home-btn {
   margin: 0;
@@ -357,26 +357,43 @@ footer .linksFooter a:hover {
 }
 @media (max-width: 767px) {
   .home-container {
-    padding: 4rem 0.8rem 0.5rem 0.8rem;
+    padding: 8rem 0 16rem 0;
   }
   .home-container .home-img img {
-    padding: 13rem 0;
+    width: 100%;
+    padding: 8rem 0 0 0;
+  }
+  .home-container .home-btn {
+    margin: 0;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 0.4rem 0.5rem;
+    color: rgb(249, 250, 251);
+    background-color: rgb(145, 197, 236);
+  }
+  .home-container .home-btn:hover {
+    cursor: pointer;
+    background-color: rgb(181, 180, 180);
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .home-container {
-    padding: 6rem 2rem 0.5rem 2rem;
+    padding: 6rem 2rem 10rem 2rem;
   }
   .home-container .home-img img {
-    padding: 12rem 0;
+    padding: 4rem 0 0 0;
+    width: 100%;
   }
 }
-@media (min-width: 1024px) and (max-width: 1320px) {
+@media (min-width: 1024px) and (max-width: 1457px) {
   .home-container {
-    padding: 6rem 8rem 0.5rem 8rem;
+    padding: 4rem 8rem 8rem 8rem;
   }
   .home-container .home-img img {
-    padding: 10rem 0;
+    padding: 4rem 0 0 0;
+    width: 100%;
   }
 }
 
