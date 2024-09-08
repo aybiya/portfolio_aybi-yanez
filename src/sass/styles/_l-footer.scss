@@ -24,11 +24,11 @@ footer{
     .linksFooter, .socialMedia{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .socialMedia{
-        margin-right: auto;
+        
         article{
             padding: 0;
             a{
@@ -45,8 +45,7 @@ footer{
     }
 
     .linksFooter{
-        margin-left: auto;
-
+        max-width: 100%;
         li{
             padding-right: 1rem;
         }
@@ -71,10 +70,6 @@ footer{
     @media (max-width: 370px) {
         margin-top: 4rem;
 
-        .linksFooter{
-            padding-left: 0.1rem;
-        }
-
         .socialMedia{
             article{
                 flex-direction: column;
@@ -94,8 +89,7 @@ footer{
     //Footer BP mobile
     @include M.medias(mobile){
         margin-top: 2rem;
-        padding: 0.5rem 0rem;
-        justify-content: space-between;
+        padding: 0.5rem 0.8rem;
         align-items: center;
 
         .logo{
@@ -103,12 +97,10 @@ footer{
         }
 
         .socialMedia{
-            width: 35%;
-            margin: 0;
+            margin-left: auto;
             padding: 0;
             
             article{
-
                 a{
                     font-size: 1.3rem;
                 }
@@ -116,11 +108,11 @@ footer{
         }
 
         .linksFooter{
+            margin-right: auto;
             flex-direction: column;
             justify-content:start;
             align-items: start;
             margin: 0;
-            width: 50%;
             padding: 0;
 
             li{
@@ -148,10 +140,11 @@ footer{
 
     //Footer BP tablet
     @include M.medias(tablet) {
-
         .socialMedia{
             justify-content: space-around;
-
+            margin: 0;
+            padding: 0;
+            
             article{
                 a{
                     font-size: 1.2rem;
@@ -160,12 +153,10 @@ footer{
             }
         }
 
-        .logo{
-            width: 30%;
-        }
+        
 
         .linksFooter{
-            margin-left: auto;
+            max-width: 40%;
 
             a{
                 font-size: 0.8rem;

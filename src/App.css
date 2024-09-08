@@ -199,10 +199,7 @@ footer .logo {
 footer .linksFooter, footer .socialMedia {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-}
-footer .socialMedia {
-  margin-right: auto;
+  justify-content: space-between;
 }
 footer .socialMedia article {
   padding: 0;
@@ -218,7 +215,7 @@ footer .socialMedia article a:hover {
   cursor: pointer;
 }
 footer .linksFooter {
-  margin-left: auto;
+  max-width: 100%;
 }
 footer .linksFooter li {
   padding-right: 1rem;
@@ -243,9 +240,6 @@ footer .linksFooter a:hover {
   footer {
     margin-top: 4rem;
   }
-  footer .linksFooter {
-    padding-left: 0.1rem;
-  }
   footer .socialMedia article {
     flex-direction: column;
     justify-content: end;
@@ -259,27 +253,25 @@ footer .linksFooter a:hover {
 @media (max-width: 767px) {
   footer {
     margin-top: 2rem;
-    padding: 0.5rem 0rem;
-    justify-content: space-between;
+    padding: 0.5rem 0.8rem;
     align-items: center;
   }
   footer .logo {
     display: none;
   }
   footer .socialMedia {
-    width: 35%;
-    margin: 0;
+    margin-left: auto;
     padding: 0;
   }
   footer .socialMedia article a {
     font-size: 1.3rem;
   }
   footer .linksFooter {
+    margin-right: auto;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     margin: 0;
-    width: 50%;
     padding: 0;
   }
   footer .linksFooter li {
@@ -301,16 +293,15 @@ footer .linksFooter a:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   footer .socialMedia {
     justify-content: space-around;
+    margin: 0;
+    padding: 0;
   }
   footer .socialMedia article a {
     font-size: 1.2rem;
     padding-right: 0.45rem;
   }
-  footer .logo {
-    width: 30%;
-  }
   footer .linksFooter {
-    margin-left: auto;
+    max-width: 40%;
   }
   footer .linksFooter a {
     font-size: 0.8rem;
