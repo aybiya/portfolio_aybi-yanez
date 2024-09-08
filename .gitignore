@@ -12,8 +12,8 @@
 /build
 
 # data
-/data
-.src/Context/translations.json
+/src/data
+/src/Context/translations.json
 
 # misc
 .DS_Store
