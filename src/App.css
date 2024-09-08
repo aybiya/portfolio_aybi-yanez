@@ -457,7 +457,7 @@ footer .linksFooter a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  margin: 0 1rem;
+  margin: 1.3rem 1rem 0 1rem;
   gap: 0.5rem;
 }
 .main-container__skills .skills-cards__logos .skills-icons {
@@ -466,18 +466,12 @@ footer .linksFooter a:hover {
   margin: 0;
   padding: 0;
 }
-.main-container__skills .skills-cards__frontEnd {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-content: center;
-}
-.main-container__skills .skills-cards__frontEnd ul {
-  padding: 0 0.5rem 0 0;
-  margin-top: 0;
-}
 .main-container__skills .skills-cards h3 {
   margin-bottom: 0.6rem;
+}
+.main-container__skills :nth-child(5) ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .main-container__formation {
   padding-top: 5rem;
@@ -749,6 +743,17 @@ footer .linksFooter a:hover {
   .main-container {
     padding: 7rem 8rem 0.5rem 8rem;
   }
+}
+
+.main-container__skills .skill-cards .skill-cards__frontEnd {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-content: center;
+  background-color: beige ul;
+  background-color-padding: 0 0.5rem 0 0;
+  background-color-margin-top: 0;
+  background-color-display: flex;
 }
 
 /* // Branding */
