@@ -39,13 +39,17 @@ const SkillList = () => {
     <section className="main-container__skills">
       {Object.keys(groupedSkills).map((category) => (
         <article className="skills-cards" key={category}>
-          <h3>{category === 'Softwares diseño' || category === 'Design Software' ? language === 'es' ? 'Softwares diseño' : 'Design Software' : category}</h3>
-          {category === (language === 'es' ? 'Softwares diseño' : 'Design Software') ? (
+          <h3>
+            {category === 'Softwares diseño' || category === 'Design softwares' 
+              ? (language === 'es' ? 'Softwares diseño' : 'Design softwares') 
+              : category}
+          </h3>
+          {(category === 'Softwares diseño' || category === 'Design softwares') ? (
             <section className='skills-cards__logos'>
-                <SiAdobeillustrator className="skills-icons" />
-                <SiAdobephotoshop className="skills-icons" />
-                <SiAdobeindesign className="skills-icons" />
-                <SiAdobexd className="skills-icons" />
+              <SiAdobeillustrator className="skills-icons" />
+              <SiAdobephotoshop className="skills-icons" />
+              <SiAdobeindesign className="skills-icons" />
+              <SiAdobexd className="skills-icons" />
             </section>
           ) : category === (language === 'es' ? 'Idioma' : 'Language') ? (
             <div>
