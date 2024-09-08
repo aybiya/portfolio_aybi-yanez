@@ -45,10 +45,6 @@ const CV = () => {
                 </article>
                 <section className="contact-info-container">
                     <article className="contact-info">
-                    <a href="https://api.whatsapp.com/send/?phone=5493875822304" target="_blank" className='elemnt'>
-                        <IoLogoWhatsapp className='media-icon'/>
-                        +54 3875 822304
-                    </a>
                     <a href="https://www.linkedin.com/in/aybi-yanez/" target="_blank" className='elemnt'>
                         <FaLinkedinIn className='media-icon'/>
                         www.linkedin.com/in/aybi-yanez
