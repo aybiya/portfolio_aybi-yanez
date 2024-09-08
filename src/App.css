@@ -267,6 +267,7 @@ footer .linksFooter a:hover {
     font-size: 1.3rem;
   }
   footer .linksFooter {
+    width: 60%;
     margin-right: auto;
     flex-direction: column;
     justify-content: start;
@@ -301,7 +302,7 @@ footer .linksFooter a:hover {
     padding-right: 0.45rem;
   }
   footer .linksFooter {
-    max-width: 40%;
+    width: 40%;
   }
   footer .linksFooter a {
     font-size: 0.8rem;
