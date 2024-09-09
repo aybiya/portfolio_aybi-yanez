@@ -4,22 +4,33 @@ import socialMediaData from "../data/socialMediaData.json";
 
 const SocialMedia = () => {
   const { language, translations } = useContext(LanguageContext);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoadingPage, setIsLoadingPage] = useState(true); // Estado para cargar la página
+  const [isLoadingData, setIsLoadingData] = useState(true); // Estado para cargar los datos
 
-  // Mssg mientras está cargando la página 
+  // Simulación de la carga de la página
   useEffect(() => {
-    
     const loadingTimer = setTimeout(() => {
-      setIsLoading(false);
+      setIsLoadingPage(false);
     }, 200);
 
-    return () => clearTimeout(loadingTimer); 
+    return () => clearTimeout(loadingTimer);
+  }, []);
+
+  // Simulación de la carga de los datos de socialMediaData
+  useEffect(() => {
+    const dataLoadingTimer = setTimeout(() => {
+      setIsLoadingData(false);
+    }, 500); // Tiempo de carga simulado
+
+    return () => clearTimeout(dataLoadingTimer);
   }, []);
 
   return (
     <main className="main-social-media">
-      {isLoading ? (
-        <p className="loading-mssg">Cargando página...</p> // Mssg mientras está cargando la página 
+      {isLoadingPage ? (
+        <p className="loading-mssg">{translations[language].socialMedia.loadingPage}</p>
+      ) : isLoadingData ? (
+        <p className="loading-mssg">{translations[language].socialMedia.loadingData}</p> // Mensaje mientras se cargan los datos
       ) : (
         <>
           <section>

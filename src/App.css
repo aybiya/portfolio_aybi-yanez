@@ -632,6 +632,9 @@ footer .linksFooter a:hover {
   .main-container__skills .skills-cards ul, .main-container__skills .skills-cards li {
     font-size: 20px;
   }
+  .main-container__skills .skills-cards__logos {
+    margin: 0.6rem 1rem 0 1rem;
+  }
   .main-container__skills .skills-cards__logos .skills-icons {
     font-size: 2.4rem;
   }

@@ -2,25 +2,25 @@
     "es": {
       "home": {
         "button": "Ver Curriculum Vitae",
-        "imgAlt": "portada de mi portfolio como diseñadora gráfica y full stack developer"
+        "imgAlt": "portada de mi portfolio como diseñadora gráfica y desarrollo full stack"
       },
       "intro": {
         "imgAlt": "Foto de perfil de Aybi Yañez",
         "greeting": "¡Hola, soy Aybi!",
         "clarification": "(sí, mi nombre es Aybi)",
-        "intro1": "Tengo 28 años, soy licenciada en diseño gráfico con 6 años de experiencia en diseño de identidad visual, branding y social media. También estudié full stack developer, lo que me lleva a integrar mis dos pasiones en mis proyectos: el diseño gráfico y el desarrollo web.",
+        "intro1": "Tengo 28 años, soy licenciada en diseño gráfico con 6 años de experiencia en diseño de identidad visual, branding y social media. También estudié desarrollo full stack, lo que me lleva a integrar mis dos pasiones en mis proyectos: el diseño gráfico y el desarrollo web.",
         "intro2": "Mi objetivo es transmitir mensajes de manera efectiva, explorando nuevas herramientas y poniendo a prueba mi creatividad cada día."
       },
       "curriculumVitae": {
         "heading": "Curriculum Vitae",
-        "description1": "Aspiro seguir creciendo, me enfoco en fusionar el diseño gráfico con el desarrollo web para crear soluciones innovadoras y efectivas.",
+        "description1": "Aspiro a seguir creciendo, me enfoco en fusionar el diseño gráfico con el desarrollo web para crear soluciones innovadoras y efectivas.",
         "description2":"En busca de crecer de forma profesional y desarrollar nuevas habilidades creativas, estoy lista para enfrentar nuevos retos y contribuir con mi experiencia a proyectos emocionantes.",
         "formationHeading": "Formación:",
         "university":"Universidad Católica de Salta | 2015-2021",
         "degree":"Licenciatura en Diseño Gráfico",
         "graduated":"Egresada",
         "webDevelopment":"Desarrollo web",
-        "bootcamp":"Bootcamp Full Stack Developer",
+        "bootcamp":"Bootcamp Full Stack Engineer",
         "completed":"Finalizado",
         "experienceHeading": "Experiencia laboral:",
         "freelancer": "Freelancer | 2018 - Actualidad",
@@ -45,7 +45,9 @@
         "designs":"Diseños"
       },
       "socialMedia": {
-        "description": "Creación de contenido, piezas gráficas y edición fotográfica para redes sociales"
+        "description": "Creación de contenido, piezas gráficas y edición fotográfica para redes sociales",
+        "loadingPage":"Cargando página...",
+        "loadingData":"Cargando datos..."
       }
     },
     "en": {
@@ -57,7 +59,7 @@
         "imgAlt": "Aybi's profile picture",
         "greeting": "Hi, I'm Aybi!",
         "clarification": "(yes, my name is Aybi)",
-        "intro1": "I am 28 years old, I have a degree in graphic design with 6 years of experience in visual identity design, branding and social media. I also studied full stack development, which leads me to integrate my two passions in my projects: graphic design and web development.",
+        "intro1": "I am 28 years old, I have a degree in graphic design with 6 years of experience in visual identity design, branding and social media. I also studied to be a full stack developer, which leads me to integrate my two passions in my projects: graphic design and web development.",
         "intro2":"My goal is to convey messages effectively, exploring new tools and putting my creativity to the test every day."
       },
       "curriculumVitae": {
@@ -69,7 +71,7 @@
         "degree":"Degree in Graphic Design",
         "graduated":"Graduated",
         "webDevelopment":"Web Development",
-        "fullStack":"Full Stack Developer Bootcamp",
+        "fullStack":"Full Stack Engineer Bootcamp",
         "completed":"Completed",
         "experienceHeading": "Work experience:",
         "freelancer": "Freelancer | 2018 - Present",
@@ -94,7 +96,9 @@
         "designs":"Designs"
       },
       "socialMedia": {
-        "description": "Content creation, graphic pieces and photo editing for social media"
+        "description": "Content creation, graphic pieces and photo editing for social media",
+        "loadingPage":"Loading page...",
+        "loadingData":"Loading data..."
       }
     }
 }
