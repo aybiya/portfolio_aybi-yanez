@@ -4,10 +4,10 @@ import socialMediaData from "../data/socialMediaData.json";
 
 const SocialMedia = () => {
   const { language, translations } = useContext(LanguageContext);
-  const [isLoadingPage, setIsLoadingPage] = useState(true); // Estado para cargar la página
-  const [isLoadingData, setIsLoadingData] = useState(true); // Estado para cargar los datos
+  const [isLoadingPage, setIsLoadingPage] = useState(true); 
+  const [isLoadingData, setIsLoadingData] = useState(true); 
+  const [error, setError] = useState(null); // Estado para manejar errores
 
-  // Simulación de la carga de la página
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setIsLoadingPage(false);
@@ -16,21 +16,26 @@ const SocialMedia = () => {
     return () => clearTimeout(loadingTimer);
   }, []);
 
-  // Simulación de la carga de los datos de socialMediaData
   useEffect(() => {
     const dataLoadingTimer = setTimeout(() => {
+      // Simulación de carga de datos; en producción, deberías cargar datos aquí
       setIsLoadingData(false);
-    }, 500); // Tiempo de carga simulado
+    }, 500);
 
     return () => clearTimeout(dataLoadingTimer);
   }, []);
+
+  if (error) {
+    setError(error.message);
+    toast.error(translations[language].error.loadingData || 'Error al cargar los datos');
+  }
 
   return (
     <main className="main-social-media">
       {isLoadingPage ? (
         <p className="loading-mssg">{translations[language].socialMedia.loadingPage}</p>
       ) : isLoadingData ? (
-        <p className="loading-mssg">{translations[language].socialMedia.loadingData}</p> // Mensaje mientras se cargan los datos
+        <p className="loading-mssg">{translations[language].socialMedia.loadingData}</p>
       ) : (
         <>
           <section>
@@ -47,11 +52,11 @@ const SocialMedia = () => {
                       <source srcSet={image.desktop} media="(min-width: 768px)" />
                       <img 
                         src={image.mobile} 
-                        alt={image.alt} 
+                        alt={language === 'es' ? image.alt_es : image.alt_en} 
                         onLoad={() => console.log(`Imagen ${image.mobile} cargada`)}
                       />
                     </picture>
-                    <p>{image.caption}</p>
+                    <p>{language === 'es' ? image.caption_es : image.caption_en}</p>
                   </div>
                 ))}
               </article>

@@ -15,7 +15,7 @@ const CV = () => {
             <article className="intro-profile">
                 <picture>
                 <img
-                src="https://aybiya.github.io/portfolio-aybi-yanez/images/profile-photo.png"
+                src="https://firebasestorage.googleapis.com/v0/b/portfolio-26162.appspot.com/o/profile-photo.webp?alt=media&token=460b6919-f70c-452a-8862-898d7643667e"
                 alt="{translations[language].intro.imgAlt}"
                 />
                 </picture>

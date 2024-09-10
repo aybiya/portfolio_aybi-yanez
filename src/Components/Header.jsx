@@ -6,7 +6,7 @@ import { FaTimesCircle } from "react-icons/fa";
 
 
 const Header = () => {
-  const { language, toggleLanguage, translations } = useContext(LanguageContext);
+  const { language, toggleLanguage } = useContext(LanguageContext);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
@@ -56,8 +56,8 @@ const Header = () => {
         <nav className="navBar">
             <Link to="/">
             <img className='logo' 
-            src="https://aybiya.github.io/portfolio-aybi-yanez/images/logo-AY.svg"
-            alt="Logo Aybi Yañez graphic desing + full stack developer"
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-26162.appspot.com/o/logo-AY.svg?alt=media&token=d42874b4-8b64-4a4c-8fec-0e7ea593aac6"
+            alt={language === 'es' ? "Logo Aybi Yañez graphic desing + full stack developer" : "Aybi Yañez graphic desing + full stack developer logo"}
             />
             </Link>
             <button onClick={toggleLanguage} className='language-btn'>

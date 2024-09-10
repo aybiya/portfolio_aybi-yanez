@@ -17,14 +17,14 @@ const Branding = () => {
       setIsLoading(true);
       const response = await fetch('https://66d8759537b1cadd8054bd63.mockapi.io/branding');
       if (!response.ok) {
-        throw new Error('Error al cargar los datos');
+        throw new Error(translations[language].error.loadingData || 'Error al cargar los datos');
       }
       const data = await response.json();
       setBrandings(data);
       setIsLoading(false);
     } catch (err) {
       setError(err.message);
-      toast.error('Error al cargar los datos');
+      toast.error(translations[language].error.loadingData || 'Error al cargar los datos');
     }
   };
 

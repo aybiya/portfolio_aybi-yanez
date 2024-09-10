@@ -5,7 +5,7 @@
 @use '../styles/mixin.scss' as M;
 
 .home-container{
-    padding: 0.2rem 6rem 0.5rem 6rem;
+    padding: 6rem 0.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     align-items: center;
 
     .home-img{
-        padding: 0;
+        padding: 4rem;
         margin: 0;
         width: 60%;
     }

@@ -44,6 +44,8 @@ const SkillList = () => {
               ? (language === 'es' ? 'Softwares diseño' : 'Design softwares') 
               : category}
           </h3>
+
+          {/* Mostrar íconos si la categoría es "Softwares diseño" */}
           {(category === 'Softwares diseño' || category === 'Design softwares') ? (
             <section className='skills-cards__logos'>
               <SiAdobeillustrator className="skills-icons" />
@@ -52,15 +54,22 @@ const SkillList = () => {
               <SiAdobexd className="skills-icons" />
             </section>
           ) : category === (language === 'es' ? 'Idioma' : 'Language') ? (
+            // Mostrar el nombre del idioma y la URL si la categoría es "Idioma" o "Language"
             <div>
-              <p>{language === 'es' ? 'Inglés' : 'English'}</p>
-              <picture className="skills-cards__image">
-                <img
-                  src="https://aybiya.github.io/portfolio-aybi-yanez/images/english-dots.svg"
-                  alt={language === 'es' ? "Vectores, nivel de Inglés intermedio." : "English level intermediate."}
-                  className="dots"
-                />
-              </picture>
+              {groupedSkills[category].map((skill) => (
+                <div key={skill.id} className="skills-language">
+                  <p>{language === 'es' ? skill.name_es : skill.name_en}</p>
+                  {skill.url && (
+                    <picture className="skills-cards__image">
+                      <img
+                        src={skill.url}
+                        alt={language === 'es' ? `Logo de ${skill.name_es}` : `Logo of ${skill.name_en}`}
+                        className="dots"
+                      />
+                    </picture>
+                  )}
+                </div>
+              ))}
             </div>
           ) : (
             <ul>

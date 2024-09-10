@@ -10,7 +10,7 @@ const Home = () => {
     <main className="home-container">
         <picture className="home-img">
           <img
-            src="https://raw.githubusercontent.com/aybiya/portfolio-aybi-yanez/575d389f9cfa7d4ec8312530dde777389a1f5c08/images/portada-portfolio.png"
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-26162.appspot.com/o/portada-portfolio.webp?alt=media&token=66e13df4-92b4-46df-817f-352f37bc2c90"
             alt="{translations[language].home.imgAlt}"
           />
         </picture>
