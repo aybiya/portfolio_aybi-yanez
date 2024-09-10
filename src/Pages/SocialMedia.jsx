@@ -6,7 +6,7 @@ const SocialMedia = () => {
   const { language, translations } = useContext(LanguageContext);
   const [isLoadingPage, setIsLoadingPage] = useState(true); 
   const [isLoadingData, setIsLoadingData] = useState(true); 
-  const [error, setError] = useState(null); // Estado para manejar errores
+  const [error, setError] = useState(null); 
 
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
@@ -18,7 +18,7 @@ const SocialMedia = () => {
 
   useEffect(() => {
     const dataLoadingTimer = setTimeout(() => {
-      // Simulación de carga de datos; en producción, deberías cargar datos aquí
+      // Simulación de carga de datos
       setIsLoadingData(false);
     }, 500);
 
@@ -53,7 +53,6 @@ const SocialMedia = () => {
                       <img 
                         src={image.mobile} 
                         alt={language === 'es' ? image.alt_es : image.alt_en} 
-                        onLoad={() => console.log(`Imagen ${image.mobile} cargada`)}
                       />
                     </picture>
                     <p>{language === 'es' ? image.caption_es : image.caption_en}</p>

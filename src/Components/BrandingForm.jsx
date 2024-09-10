@@ -7,7 +7,7 @@ const BrandingForm = () => {
   const [designs, setDesigns] = useState([]);
   const [newDesign, setNewDesign] = useState('');
   const [brandingList, setBrandingList] = useState([]);
-  const [editingId, setEditingId] = useState(null); // Nuevo estado para el id del branding en edición
+  const [editingId, setEditingId] = useState(null); 
 
   useEffect(() => {
     // Cargar los datos de branding existentes al montar el componente

@@ -7,7 +7,7 @@ const SkillsForm = () => {
   const [categoryEn, setCategoryEn] = useState('');
   const [url, setUrl] = useState('');
   const [skillsList, setSkillsList] = useState([]);
-  const [editingId, setEditingId] = useState(null); // Estado para el id del skill en edición
+  const [editingId, setEditingId] = useState(null); 
 
   useEffect(() => {
     // Cargar los datos de habilidades existentes al montar el componente
@@ -82,7 +82,7 @@ const SkillsForm = () => {
     setCategoryEs('');
     setCategoryEn('');
     setUrl('');
-    setEditingId(null); // Resetear el id al limpiar el formulario
+    setEditingId(null); 
   };
 
   const handleEdit = (skill) => {
@@ -91,7 +91,7 @@ const SkillsForm = () => {
     setCategoryEs(skill.category_es);
     setCategoryEn(skill.category_en);
     setUrl(skill.url || '');
-    setEditingId(skill.id); // Guardar el id del skill en edición
+    setEditingId(skill.id); 
   };
 
   return (

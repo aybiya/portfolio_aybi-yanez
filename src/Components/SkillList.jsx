@@ -54,7 +54,6 @@ const SkillList = () => {
               <SiAdobexd className="skills-icons" />
             </section>
           ) : category === (language === 'es' ? 'Idioma' : 'Language') ? (
-            // Mostrar el nombre del idioma y la URL si la categoría es "Idioma" o "Language"
             <div>
               {groupedSkills[category].map((skill) => (
                 <div key={skill.id} className="skills-language">
