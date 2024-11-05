@@ -498,10 +498,12 @@ footer .linksFooter a:hover {
   background-color: rgb(249, 250, 251);
   border-radius: 30px;
   box-shadow: 1px 1px 15px 1px rgb(233, 237, 237);
-  padding: 0 1.5rem 1.5rem 2rem;
+  padding: 0 0.5rem 1rem 0.5rem;
   margin: 0 0.8rem;
-  width: 80%;
+  width: 75%;
   height: 98%;
+  display: grid;
+  justify-content: center;
 }
 .main-container__formation .container-formation-cards .formation-cards h3 {
   padding-bottom: 0;
@@ -509,6 +511,7 @@ footer .linksFooter a:hover {
 }
 .main-container__formation .container-formation-cards .formation-cards div p {
   margin: 0;
+  padding: 0;
   font-weight: 600;
   text-align: left;
 }
@@ -528,6 +531,7 @@ footer .linksFooter a:hover {
 }
 .main-container__formation .container-formation-cards .formation-cards div ul li {
   font-weight: 400;
+  font-size: 1.1rem;
   font-style: italic;
 }
 .main-container__formation .container-formation-cards .formation-cards div ul :first-child {
@@ -699,7 +703,7 @@ footer .linksFooter a:hover {
     padding: 0.3rem;
     font-style: italic;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .main-container__skills {
     grid-template-columns: 1fr 1fr;
@@ -728,7 +732,7 @@ footer .linksFooter a:hover {
   }
   .main-container__formation .container-formation-cards .formation-cards {
     padding-bottom: 1rem;
-    width: 80%;
+    width: 78%;
     height: 100%;
   }
   .main-container__formation .container-formation-cards .formation-cards ul, .main-container__formation .container-formation-cards .formation-cards li {
