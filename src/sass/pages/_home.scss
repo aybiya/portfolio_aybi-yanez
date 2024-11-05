@@ -1,10 +1,10 @@
-/* // Index page*/
+/* Index page */
 
 @use '../styles/h-fonts.scss' as F;
 @use '../styles/h-colors.scss' as C;
 @use '../styles/mixin.scss' as M;
 
-.home-container{
+.home-container {
     padding: 6rem 0.5rem;
     text-align: center;
     display: flex;
@@ -12,81 +12,60 @@
     justify-content: flex-start;
     align-items: center;
 
-    .home-img{
+    .home-img {
         padding: 4rem;
         margin: 0;
         width: 60%;
     }
 
-    .home-btn{
+    .home-btn {
         margin: 0;
         font-size: 1rem;
         font-family: F.$titleFont;
         border-radius: 10px;
         border: none;
         padding: 0.5rem 0.7rem;
-        color: C.$witheColor;
-        background-color: C.$CyanColor;
+        color: C.$whiteColor;
+        background-color: C.$cyanColor;
         
-        &:hover{
+        &:hover {
             cursor: pointer;
-            background-color: C.$lightGrayColor;
+            background-color: C.$grayBlueColor;
         }
-        
     }
-      
 
-    //Footer BP mobile
-    @include M.medias(mobile){
+    // Footer BP mobile
+    @include M.medias(mobile) {
         padding: 8rem 0 16rem 0;
 
-        .home-img{
-            img{
-                width: 100%;
-                padding: 8rem 0 0 0;
-            }
+        .home-img img {
+            width: 100%;
+            padding: 8rem 0 0 0;
         }
 
-        .home-btn{
-            margin: 0;
+        .home-btn {
             font-size: 0.8rem;
-            font-family: F.$titleFont;
-            border: none;
-            border-radius: 10px;
             padding: 0.4rem 0.5rem;
-            color: C.$witheColor;
-            background-color: C.$CyanColor;
-            
-            &:hover{
-                cursor: pointer;
-                background-color: C.$lightGrayColor;
-            }
-            
         }
     }
 
-
-
-    //Footer BP tablet
+    // Footer BP tablet
     @include M.medias(tablet) {
         padding: 6rem 2rem 10rem 2rem;
 
-        .home-img{
-            img{
-                padding: 4rem 0 0 0;
-                width: 100%;
-            }
+        .home-img img {
+            padding: 4rem 0 0 0;
+            width: 100%;
         }
     }
     
+    //BP Desktop
     @media (min-width: 1024px) and (max-width: 1457px) {
         padding: 4rem 8rem 8rem 8rem;
 
-        .home-img{
-            img{
-                padding: 4rem 0 0 0;
-                width: 100%;
-            }
+        .home-img img {
+            padding: 4rem 0 0 0;
+            width: 100%;
         }
     }
 }

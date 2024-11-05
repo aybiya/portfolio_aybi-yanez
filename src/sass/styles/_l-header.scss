@@ -9,7 +9,7 @@ header{
     width: 100vw;
     
     .navBar{
-        background-color: C.$GrayBlueColor;
+        background-color: C.$grayBlueColor;
         box-shadow: 2px 2px 20px 0.8px rgb(208, 213, 219);
         display: flex;
         justify-content:space-between;
@@ -30,11 +30,11 @@ header{
             margin-left: auto;
             font-size: 1rem;
             font-family: F.$titleFont;
-            border: 2px solid C.$witheColor;
+            border: 2px solid C.$whiteColor;
             border-radius: 10px;
             padding: 0.4rem 0.5rem;
-            color: C.$witheColor;
-            background-color: C.$GrayBlueColor;;
+            color: C.$whiteColor;
+            background-color: C.$grayBlueColor;;
             
             &:hover{
                 cursor: pointer;
@@ -56,7 +56,7 @@ header{
             list-style: none;
 
             a{
-                color: C.$ligthColor;
+                color: C.$lightColor;
                 font-family: F.$titleFont;
                 letter-spacing: 1.2px;
                 font-size: F.$textSm;
@@ -107,7 +107,7 @@ header{
                 display: none;
                 width: 100%;
                 flex-direction: column;
-                background-color: C.$ligthColor;
+                background-color: C.$lightColor;
                 margin-bottom: 0;
                 padding: 1.5rem 0;
 

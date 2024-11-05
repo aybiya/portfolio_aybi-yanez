@@ -6,9 +6,9 @@
 
 footer{
     width: 100%;
-    background-color: C.$GrayBlueColor;
+    background-color: C.$grayBlueColor;
     margin: 8rem 0 0 0;
-    color: C.$ligthColor;
+    color: C.$lightColor;
     padding: 0.2rem 2rem;
     display: flex;
     flex-direction: row;
@@ -34,7 +34,7 @@ footer{
             a{
                 padding-right: 1rem;
                 text-decoration: none;
-                color: C.$ligthColor;
+                color: C.$lightColor;
                 font-size: 1.8rem; 
             }
             a:hover{
@@ -50,7 +50,7 @@ footer{
             padding-right: 1rem;
         }
         a{
-            color: C.$ligthColor;
+            color: C.$lightColor;
             font-family: F.$titleFont;
             letter-spacing: 1px;
             font-size: 0.9rem;

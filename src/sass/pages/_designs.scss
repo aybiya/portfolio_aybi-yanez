@@ -18,7 +18,7 @@
 
         &:hover{
             cursor: pointer;
-            color: C.$CyanColor;
+            color: C.$cyanColor;
         }
     }
     
@@ -33,7 +33,7 @@
             padding: 1rem 0;
             text-align: center;
             background-color: C.$primaryColor;
-            color: C.$ligthColor;
+            color: C.$lightColor;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
         }

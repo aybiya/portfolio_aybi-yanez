@@ -12,66 +12,76 @@
     text-align: center;
 
     section{
-        h1,p{
+        h1, p {
             padding: 0;
             margin: 0;
         }
         padding-bottom: 4rem;
     }
-
-    &__cards{
-        article{
-            padding: 2rem 0 4.5rem 0;
-
-            h2{
-                color: C.$GrayBlueColor;
+    .social-media__cards {
+        article {
+            padding-bottom: 5rem;
+            h2 {
+                padding: 0;
+                color: C.$grayBlueColor;
             }
-
-            p{
-                padding-bottom: 3rem;
-                font-size: 1.5rem;
-            }
+            div{
+                picture{
+                    img{
+                        padding: 0.5rem 0;
+                    }
+                }
+                    p{
+                        font-size: 1.2rem;
+                        font-style: italic;
+                        padding-bottom: 5rem;
+                    }
+                }
         }
-
-
     }
 
-     //NavbBar BP mobile
-     @include M.medias(mobile){
+
+    // BP mobile
+    @include M.medias(mobile) {
         padding: 8rem 0.5rem 0 0.5rem;
-       
-        section{
+
+        section {
             padding-bottom: 4rem;
         }
 
-        &__cards{
-
-            article{
+        &__cards {
+            article {
                 padding: 1.5rem;
-                h2{
+
+                h2 {
                     font-size: 2.1rem;
                 }
-                p{
+
+                p {
                     font-size: 1.2rem;
                 }
-                img{
+
+                img {
                     padding: 1rem 0 4rem 0;
                 }
             }
         }
     }
 
-     //NavbBar BP tablet
-     @include M.medias(tablet){
+    // BP tablet
+    @include M.medias(tablet) {
         padding: 8rem 0.5rem 0 0.5rem;
-       
-        &__cards{
-            h2{
-                font-size: 2.3;
-            }
-            p{
-                font-size: 1rem;
+
+        &__cards {
+            article {
+                h2 {
+                    font-size: 2.3rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
             }
         }
-     }
+    }
 }

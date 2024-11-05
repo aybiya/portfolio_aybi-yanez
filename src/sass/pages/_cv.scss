@@ -4,12 +4,12 @@
 @use '../styles/h-colors.scss' as C;
 @use '../styles/mixin.scss' as M;
 
-.main-container{
+.main-container {
     padding: 7rem 6rem 0.5rem 6rem;
     text-align: center;
 
-    &__intro{
-        p{
+    &__intro {
+        p {
             padding: 0.9rem 2.5rem 0 2.5rem;
             margin: 0;
         }
@@ -33,17 +33,17 @@
                 }
             }
 
-            div{
+            div {
                 padding-top: 0;
                 width: 60%;
-                h1{
+                h1 {
                     text-align: left;
                     padding: 0;
                     margin: 0;
                 }
-                p{
+                p {
                     text-align: left;
-                    padding:0.3rem;
+                    padding: 0.3rem;
                     font-style: italic;
                     font-weight: F.$textLight;
                     font-size: 1.1rem;
@@ -52,200 +52,194 @@
         }
     }
 
-    &__skills{
+    &__skills {
         display: grid;
-        grid-template-columns:repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 40px;
         padding-top: 3rem;
         justify-items: center;
         align-content: center;
 
-        .skills-cards{
-            background-color: C.$witheColor;
+        .skills-cards {
+            background-color: C.$whiteColor;
             border-radius: 30px;
             box-shadow: 1px 1px 15px 1px rgb(233, 237, 237);
             padding: 0.4rem 1rem 1.1rem 1rem;
             width: 80%;
             height: 100%;
-            
-            
-            ul{
+
+            ul {
                 padding-left: 0;
                 padding-top: 0;
                 margin-top: 0;
             }
 
-            &__image{
-                
-                .dots{
+            &__image {
+                .dots {
                     width: 40%;
                 }
-                
             }
-            
-            
-            &__logos{
+
+            &__logos {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr); 
+                grid-template-columns: repeat(2, 1fr);
                 justify-items: center;
                 margin: 1.3rem 1rem 0 1rem;
-                gap: 0.5rem;     
-                    
-                                            
-                .skills-icons{
+                gap: 0.5rem;
+
+                .skills-icons {
                     font-size: 3rem;
-                    color: C.$CyanColor; 
+                    color: C.$cyanColor;
                     margin: 0;
                     padding: 0;
                 }
             }
 
-            h3{
+            h3 {
                 margin-bottom: 0.6rem;
             }
-                        
         }
-        // front-end card
-        :nth-child(5){
-            ul{
+
+        :nth-child(5) {
+            ul {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr)
-            };
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     }
 
-    &__formation{
+    &__formation {
         padding-top: 5rem;
 
-        article{
-
-            h2{
-                padding:0 0 0.8rem 0;
+        article {
+            h2 {
+                padding: 0 0 0.8rem 0;
                 margin: 0;
             }
-            p{
+            p {
                 padding: 0.9rem 2.5rem 0 2.5rem;
                 margin: 0;
             }
         }
 
-        .container-formation-cards{
+        .container-formation-cards {
             margin-top: 3rem;
             display: grid;
-            grid-template-columns: 1fr 1fr; 
+            grid-template-columns: 1fr 1fr;
             gap: 10px;
             justify-items: center;
             align-content: center;
 
-            .formation-cards{
-                background-color: C.$witheColor;
+            .formation-cards {
+                background-color: C.$whiteColor;
                 border-radius: 30px;
                 box-shadow: 1px 1px 15px 1px rgb(233, 237, 237);
                 padding: 0 0.5rem 1rem 0.5rem;
-                margin: 0 0.8rem;   
+                margin: 0 0.8rem;
                 width: 75%;
-                height: 98%; 
+                height: 98%;
                 display: grid;
                 justify-content: center;
-                            
-                h3{
+
+                h3 {
                     padding-bottom: 0;
                     margin-bottom: 0;
-                }                     
+                }
 
-                div{
-                    p{
+                div {
+                    p {
                         margin: 0;
                         padding: 0;
                         font-weight: F.$textSemiBold;
                         text-align: left;
                     }
-                    :first-child{
+                    :first-child {
                         font-weight: F.$textBlack;
                         padding-top: 1rem;
                     }
-                    :last-child{
+                    :last-child {
                         font-weight: F.$textLight;
                         font-style: italic;
                         padding-top: 0.1rem;
                     }
-                                
-                    ul{
+
+                    ul {
                         padding: 0 0.6rem;
                         margin-top: 0;
                         text-align: left;
 
-                        li{
+                        li {
                             font-weight: F.$textRegular;
                             font-size: 1.1rem;
                             font-style: italic;
                         }
-                        :first-child{
+
+                        :first-child {
                             font-weight: F.$textRegular;
                         }
                     }
                 }
-                            
-                        
             }
         }
     }
-    &__contact{
+
+    &__contact {
         padding-top: 6rem;
-        article{
-            h2,p{
-                padding:0 0 0.8rem 0;
+
+        article {
+            h2,
+            p {
+                padding: 0 0 0.8rem 0;
                 margin: 0;
             }
-            :nth-child(2){
+
+            :nth-child(2) {
                 font-weight: F.$textSemiBold;
             }
         }
 
-        .contact-info-container{
+        .contact-info-container {
             padding-top: 1rem;
-            
-            p{
+
+            p {
                 font-weight: F.$textSemiBold;
             }
-            
-            
-            .contact-info{
+
+            .contact-info {
                 padding-top: 0.8rem;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-    
-                a{
+
+                a {
                     display: flex;
                     text-decoration: none;
                     color: C.$primaryColor;
                     font-weight: F.$textSemiBold;
                     font-size: 1.1rem;
 
-                    .media-icon{
+                    .media-icon {
                         font-size: 1.6rem;
                         margin-right: 0.6rem;
-                        color: C.$CyanColor;   
+                        color: C.$cyanColor;
                     }
                 }
-    
-                a:hover{
-                    color: C.$CyanColor;
+
+                a:hover {
+                    color: C.$cyanColor;
                     cursor: pointer;
                 }
 
-                //Hasta 1100px va a estar en column
                 @media (max-width: 1100px) {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-            
-                    a{
+
+                    a {
                         font-size: 20px;
                         padding-bottom: 1.8rem;
-            
-                        .media-icon{
+
+                        .media-icon {
                             font-size: 1.5rem;
                         }
                     }
@@ -254,29 +248,26 @@
         }
     }
 
-
-    //Footer BP mobile
-    @include M.medias(mobile){
+    // BP mobile
+    @include M.medias(mobile) {
         padding: 9rem 0.8rem 0.5rem 0.8rem;
 
-
-        &__intro{
-
-            .intro-profile{
+        &__intro {
+            .intro-profile {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
-                p{
+                p {
                     padding: 0 0.5rem;
                 }
 
-                picture{
+                picture {
                     width: 100%;
                     text-align: center;
                     padding-right: 0;
-                    
-                    img{
+
+                    img {
                         width: 30%;
                         padding-bottom: 3px;
                         border: 6px solid #91b0d9;
@@ -284,112 +275,104 @@
                     }
                 }
 
-                div{
+                div {
                     padding-top: 0;
                     width: 100%;
 
-                    h1,p{
+                    h1,
+                    p {
                         text-align: center;
                     }
                 }
-
             }
-    
         }
 
-        &__skills{
-            grid-template-columns: 1fr; 
+        &__skills {
+            grid-template-columns: 1fr;
             justify-items: center;
             align-content: center;
 
-            .skills-cards{
+            .skills-cards {
                 padding: 0.1rem 0.5rem;
-                margin-bottom:15px;
+                margin-bottom: 15px;
                 width: 13rem;
                 height: 12rem;
 
-                h3{
+                h3 {
                     line-height: 1.8rem;
                 }
 
-                ul, li{
+                ul,
+                li {
                     font-size: 20px;
                 }
 
-                &__logos{
-                    margin: 0.6rem 1rem 0 1rem;                                               
-                    .skills-icons{
-                        font-size: 2.4rem;
+                &__logos {
+                    margin: 0.6rem 1rem 0 1rem;
 
+                    .skills-icons {
+                        font-size: 2.4rem;
                     }
                 }
             }
         }
 
-        &__formation{
-
-            .container-formation-cards{
-                grid-template-columns: 1fr; 
+        &__formation {
+            .container-formation-cards {
+                grid-template-columns: 1fr;
                 padding: 0 1rem;
                 gap: 70px;
-                
-                .formation-cards{
-                    h3{
+
+                .formation-cards {
+                    h3 {
                         line-height: 2rem;
                     }
                     margin-bottom: 40px;
                     padding-bottom: 1rem;
                     width: 95%;
-                    height: 100%; 
+                    height: 100%;
 
-                    ul, li{
+                    ul,
+                    li {
                         font-size: 20px;
                     }
                 }
             }
         }
 
-        &__contact{
-
-            .contact-info-container{
-                
-                // Cambiar el orden visual de los elementos
+        &__contact {
+            .contact-info-container {
                 .element:nth-child(1) {
-                    order: 1; 
+                    order: 1;
                 }
-                
+
                 .element:nth-child(2) {
-                    order: 3; 
+                    order: 3;
                 }
-                
+
                 .element:nth-child(3) {
-                    order: 2; 
+                    order: 2;
                 }
             }
-            
-
         }
     }
 
-
-
-    //Footer BP tablet
+    // BP tablet
     @include M.medias(tablet) {
         padding: 7rem 2rem 0.5rem 2rem;
 
-        &__intro{
-
-            .intro-profile{
+        &__intro {
+            .intro-profile {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
-                picture{
+                picture {
                     width: 50%;
                     text-align: center;
                     padding-right: 0;
-                    
-                    img{
+
+                    img {
                         width: 45%;
                         padding: 3px;
                         border: 6px solid #91b0d9;
@@ -397,94 +380,61 @@
                     }
                 }
 
-                div{
+                div {
                     padding-top: 0;
                     width: 100%;
-                    h1{
+                    h1 {
                         text-align: center;
                         padding: 0;
                         margin: 0;
                     }
-                    p{
+                    p {
                         text-align: center;
-                        padding:0.3rem;
+                        padding: 0.3rem;
                         font-style: italic;
                         font-weight: F.$textLight;
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                     }
                 }
             }
-    
         }
 
-        &__skills{
-            grid-template-columns: 1fr 1fr; 
-            gap: 35px;
+        &__skills {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
 
-            .skills-cards{
-                margin-bottom: 15px;
+            .skills-cards {
                 padding: 0.1rem 0.5rem;
-                width: 90%;
-                height: 100%;
+                margin-bottom: 15px;
+                width: 14rem;
+                height: 13rem;
 
-                ul, li{
-                    font-size: 18px;
+                h3 {
+                    line-height: 1.8rem;
                 }
 
-                &__logos{
-                    padding: 0 3rem;                                               
-                    .skills-icons{
-                        font-size: 3.3rem;
-                       padding: 0;
+                ul,
+                li {
+                    font-size: 20px;
+                }
+
+                &__logos {
+                    margin: 0.6rem 1rem 0 1rem;
+
+                    .skills-icons {
+                        font-size: 2.4rem;
                     }
                 }
             }
         }
 
-        &__formation{
-
-            .container-formation-cards{
-                grid-template-columns: 1fr; 
-                padding: 0 3rem 0 3rem;
-                gap: 60px;
-                
-                .formation-cards{
-                    padding-bottom: 1rem;
-                    width: 78%;
-                    height: 100%; 
-
-                    ul, li{
-                        font-size: 20px;
-                    }
-                }
+        &__formation {
+            .container-formation-cards {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                padding: 0 1rem;
             }
         }
-
-        &__contact{
-
-            .contact-info-container{
-                
-
-                // Cambiar el orden visual de los elementos
-                .element:nth-child(1) {
-                    order: 1; 
-                }
-                
-                .element:nth-child(2) {
-                    order: 3; 
-                }
-                
-                .element:nth-child(3) {
-                    order: 2; 
-                }
-            }
-            
-
-        }
-    } 
-    
-    @media (min-width: 1024px) and (max-width: 1320px) {
-        padding: 7rem 8rem 0.5rem 8rem;
-
     }
 }
