@@ -21,19 +21,19 @@ const CurriculumVitae = () => {
             <article className="formation-cards">
                 <h3>{translations[language].curriculumVitae.formationHeading}</h3>
                 <div>
-                <p>{translations[language].curriculumVitae.university}</p>
-                <p>{translations[language].curriculumVitae.degree}</p>
-                <p>{translations[language].curriculumVitae.graduated}</p>
+                <p>EducationIT | 03/2023 - 12/2023</p>
+                <p>{translations[language].curriculumVitae.bootcamp}</p>
+                <p>{translations[language].curriculumVitae.completed}</p>
                 </div>
                 <div>
-                <p>CoderHouse | 2022</p>
+                <p>CoderHouse | 05/2022 - 07/2022</p>
                 <p>{translations[language].curriculumVitae.webDevelopment}</p>
                 <p>{translations[language].curriculumVitae.completed}</p>
                 </div>
                 <div>
-                <p>EducationIT | 2023</p>
-                <p>{translations[language].curriculumVitae.bootcamp}</p>
-                <p>{translations[language].curriculumVitae.completed}</p>
+                <p>{translations[language].curriculumVitae.university}</p>
+                <p>{translations[language].curriculumVitae.degree}</p>
+                <p>{translations[language].curriculumVitae.graduated}</p>
                 </div>
             </article>
             <article className="formation-cards">
