@@ -38,7 +38,8 @@
         "info": "Podés contactarme por estos medios:"
       },
       "branding": {
-        "description": "Diseños de marca, branding e identidad visual",
+        "description": "Estos proyectos representan una selección de trabajos en diseño de marca, branding e identidad visual que he desarrollado. Cada diseño es el resultado de un análisis exhaustivo de la identidad de las marcas, sus valores y los mensajes que buscan comunicar.",
+        "description2":"En algunos casos, podrás explorar piezas adicionales diseñadas para estas marcas haciendo clic en donde dice: 'Ver diseños'.",
         "loading":"Cargando datos...",
         "noData":"No hay datos disponibles",
         "button":"Ver diseños",
@@ -89,7 +90,8 @@
         "info": "You can contact me through these contact methods:"
       },
       "branding": {
-        "description": "Brand designs, branding and visual identity",
+        "description": "This selection showcases some of the branding, visual identity, and brand design projects I have developed. Each design is the result of a thorough analysis of the brand’s identity, values, and the messages they aim to communicate.",
+        "description2":"In some cases, you can explore additional designs created for these brands by clicking where it says: 'View Designs'.",
         "loading":"Loading data...",
         "noData":"No data available",
         "button":"View designs",

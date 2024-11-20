@@ -49,6 +49,9 @@ const Branding = () => {
         <p>
         {translations[language].branding.description}
         </p>
+        <p>
+        {translations[language].branding.description2}
+        </p>
       </section>
       <section className="branding-container__cards">
         {error && <p>Error: {error}</p>}
