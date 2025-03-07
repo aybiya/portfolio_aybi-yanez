@@ -8,7 +8,7 @@ import Home from './Pages/Home';
 import CV from './Pages/CV';
 import Branding from './Pages/Branding';
 import SocialMedia from './Pages/SocialMedia';
-/* import Alta from './Pages/Alta'; */
+import Alta from './Pages/Alta';
 import Footer from './Components/Footer'
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/Curriculum-vitae" element={<CV />} />
         <Route path="/branding" element={<Branding />} />
         <Route path="/social-media" element={<SocialMedia />} />
-        {/* <Route path="/alta" element={<Alta />} /> */}
+        <Route path="/alta" element={<Alta />} />
       </Routes>
       <Footer/>
       <ToastContainer />
