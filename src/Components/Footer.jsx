@@ -29,7 +29,7 @@ const Footer = () => {
             </section>
             <Link to="/">
                 <img className="logo"
-                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-26162.appspot.com/o/logo-AY.svg?alt=media&token=d42874b4-8b64-4a4c-8fec-0e7ea593aac6"
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-26162.appspot.com/o/images%2Flogo-AY.svg?alt=media&token=18406920-bbbd-43df-a400-ba5bd0ea0385"
                     alt={language === 'es' ? "Logo Aybi Yañez graphic desing + full stack developer" : "Aybi Yañez graphic desing + full stack developer logo"}
                 />
             </Link>
