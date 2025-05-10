@@ -56,8 +56,8 @@ const Header = () => {
         <nav className="navBar">
             <Link to="/">
             <img className='logo' 
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-26162.appspot.com/o/logo-AY.svg?alt=media&token=d42874b4-8b64-4a4c-8fec-0e7ea593aac6"
-            alt={language === 'es' ? "Logo Aybi Yañez graphic desing + full stack developer" : "Aybi Yañez graphic desing + full stack developer logo"}
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-26162.appspot.com/o/images%2Flogo-AY.svg?alt=media&token=0040bac0-9bdf-4661-a8f1-bd8118598af4"
+            alt={language === 'es' ? "Logo Aybi Yañez graphic desing | web developer" : "Aybi Yañez graphic desing + full stack developer logo"}
             />
             </Link>
             <button onClick={toggleLanguage} className='language-btn'>
